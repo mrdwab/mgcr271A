@@ -8,7 +8,7 @@ license: by-nc-sa
 framework: io2012
 theme: default
 highlighter: highlight.js
-hitheme: hemisu-light
+hitheme: monokai
 widgets: [mathjax, quiz, bootstrap]
 github:
   user: ramnathv
@@ -86,3 +86,18 @@ This is a hint
 *** explanation
 
 This is the explanation
+
+---
+
+## Publish ##
+
+```make
+slides: index.html
+publish: slides
+    git add .
+    git commit -a -m 'Publishing Github Pages'
+    git push origin gh-pages
+
+%.html: %.Rmd
+    Rscript -e "library(slidify2); slidify2('$<', '$@')"
+```

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../libraries/frameworks/io2012/default/css/default.css" media="all" >
   <link rel="stylesheet" href="../libraries/frameworks/io2012/default/phone.css" 
     media="only screen and (max-device-width: 480px)" >
-  <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/hemisu-light.css" />
+  <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/monokai.css" />
   <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
   <script data-main="../libraries/frameworks/io2012/default/js/slides" 
     src="../libraries/frameworks/io2012/default/js/require-1.0.8.min.js">
@@ -175,6 +175,25 @@
 
   </div>
 </div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Publish</h2>
+  </hgroup>
+  <article>
+    <pre><code class="make">slides: index.html
+publish: slides
+    git add .
+    git commit -a -m &#39;Publishing Github Pages&#39;
+    git push origin gh-pages
+
+%.html: %.Rmd
+    Rscript -e &quot;library(slidify2); slidify2(&#39;$&lt;&#39;, &#39;$@&#39;)&quot;
+</code></pre>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
