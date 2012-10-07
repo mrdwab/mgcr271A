@@ -1,0 +1,109 @@
+---
+title: Slidify
+subtitle: Reproducible HTML5 Slides
+author: Ramnath Vaidyanathan
+job: Assistant Professor, McGill 
+logo: mcgill_logo_small.png
+license: by-nc-sa
+framework: io2012
+theme: default
+highlighter: highlight.js
+hitheme: hemisu-light
+widgets: [mathjax, quiz, bootstrap]
+github:
+  user: ramnathv
+  repo: slidify
+url:
+  lib: ../libraries
+  assets: ../assets
+---
+
+## Introduction to Slidify
+
+```{r setup, cache = F, echo = F, message = F, warning = F, tidy = F}
+# make this an external chunk that can be included in any file
+options(width = 70)
+opts_chunk$set(message = F, error = F, warning = F, echo = F, comment = NA, fig.align = 'center', dpi = 100, fig.height = 4.5, fig.width = 8, tidy = F, cache = TRUE, cache.path = '.cache/', fig.path = 'fig/')
+source('~/Dropbox/Inbox/R_Projects/Code_Snippets/prob.R')
+source('~/Dropbox/Inbox/R_Projects/Code_Snippets/getMooreData.R')
+require(ggplot2); require(xtable); require(plyr); require(openintro)
+options(xtable.type = 'html')
+knit_hooks$set(inline = function(x) {
+  if(is.numeric(x)) {
+    round(x, getOption('digits'))
+  } else {
+    paste(as.character(x), collapse = ', ')
+  }
+})
+knit_hooks$set(plot = knitr:::hook_plot_html)
+require(latticeExtra)
+trellis.par.set(theme = theEconomist.theme(box = 'transparent'))
+lattice.options(theEconomist.opts())
+knit_hooks$set(document = function(doc){
+  str_replace_all(doc, "```\n*```[^r]", "")
+})
+```
+
+---
+
+## Mathjax Support ##
+
+$$
+\begin{aligned}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\   \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
+\nabla \cdot \vec{\mathbf{B}} & = 0 \end{aligned}
+$$
+<br />
+$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0
+\end{vmatrix}
+$$
+
+--- &twocol
+
+## Custom Layouts ##
+
+This is a slide with a two column layout
+
+*** left
+
+Column 1
+
+*** right
+
+Column 2
+
+--- bg:yellow
+
+## Background Color ##
+
+This slide should have a solid yellow background.
+
+--- bg:url(http://goo.gl/M30iC)
+
+## Background Image ##
+
+This slide should have a background image.
+
+--- &radio .quiz
+
+## Widgets: jQuery-Quiz ##
+
+This is a multiple choice question
+
+1. Choice 1
+2. Choice 2
+3. _Choice 3 (correct)_
+4. Choice 4
+
+*** hint
+
+This is a hint
+
+*** explanation
+
+This is the explanation

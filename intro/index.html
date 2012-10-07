@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slidify</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Slidify">
+  <meta name="author" content="Ramnath Vaidyanathan">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/default/css/default.css" media="all" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/default/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/hemisu-light.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="../libraries/frameworks/io2012/default/js/slides" 
+    src="../libraries/frameworks/io2012/default/js/require-1.0.8.min.js">
+  </script>
+    <link rel="stylesheet" href = "../libraries/widgets/quiz/css/jquery-quiz.css">
+<link rel="stylesheet" href = "../libraries/widgets/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href = "../libraries/widgets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href = "../assets/css/backgrounds.css">
+<link rel="stylesheet" href = "../assets/css/captions.css">
+<link rel="stylesheet" href = "../assets/css/custom.css">
+<link rel="stylesheet" href = "../assets/css/jquery-quiz.css">
+<link rel="stylesheet" href = "../assets/css/lists.css">
+<link rel="stylesheet" href = "../assets/css/quotes.css">
+<link rel="stylesheet" href = "../assets/css/ribbons.css">
+<link rel="stylesheet" href = "../assets/css/tables.css">
+<link rel="stylesheet" href = "../assets/css/text.css">
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    <!-- <slide class="nobackground">
+        <article class="flexbox vcenter">
+          <span>
+            <img width='400px' src="../assets/img/mcgill_logo_big.jpg">
+          </span>
+        </article>
+    </slide> -->
+
+    <!-- TITLE SLIDE -->
+    <slide class="title-slide segue nobackground">
+      <aside class="gdbar"><img src="../assets/img/mcgill_logo_small.png"></aside>
+      <hgroup class="auto-fadein">
+        <h1>Slidify</h1>
+        <h2>Reproducible HTML5 Slides</h2>
+        <p>Ramnath Vaidyanathan<br/>Assistant Professor, McGill</p>
+      </hgroup>
+      <a href="https://github.com/ramnathv/slidify/zipball/gh-pages" class="example">
+        Download
+      </a>
+      <footer class = 'source'>
+        <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+        <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+        </a>
+      </footer>
+    </slide>
+
+    <!-- SLIDES -->
+      <slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Introduction to Slidify</h2>
+  </hgroup>
+  <article>
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Mathjax Support</h2>
+  </hgroup>
+  <article>
+    <p>\[
+\begin{aligned}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\   \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
+\nabla \cdot \vec{\mathbf{B}} & = 0 \end{aligned}
+\]
+<br />
+\[
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0
+\end{vmatrix}
+\]</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Custom Layouts</h2>
+  </hgroup>
+  <article>
+    
+<p>This is a slide with a two column layout</p>
+
+
+
+<div style='float:left;width:48%'>
+  <p>Column 1</p>
+
+
+</div>
+<div style='float:right;width:48%'>
+  <p>Column 2</p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="" style="background:yellow;">
+  <hgroup>
+    <h2>Background Color</h2>
+  </hgroup>
+  <article>
+    <p>This slide should have a solid yellow background.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="" style="background:url(http://goo.gl/M30iC);">
+  <hgroup>
+    <h2>Background Image</h2>
+  </hgroup>
+  <article>
+    <p>This slide should have a background image.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz" id="" style="background:;">
+  <hgroup>
+    <h2>Widgets: jQuery-Quiz</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>This is a multiple choice question</p>
+
+<ol>
+<li>Choice 1</li>
+<li>Choice 2</li>
+<li><em>Choice 3 (correct)</em></li>
+<li>Choice 4</li>
+</ol>
+
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  <button class="quiz-toggle-hint btn">Show Hint</button>
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  
+  <div class="quiz-hint">
+    <p>This is a hint</p>
+
+
+  </div>
+  
+  <div class="quiz-explanation">
+    <p>This is the explanation</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+
+  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+<!-- Grab CDN jQuery, fall back to local if offline -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="../libraries/widgets/quiz/js/jquery-1.7.min.js"><\/script>')</script>
+<!-- Load Javascripts for Widgets -->
+<!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="../libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script src='../libraries/widgets/quiz/js/jquery.quiz.js'></script>
+<script src='../libraries/widgets/quiz/js/mustache.min.js'></script>
+<script type="text/javascript">
+ $('.quiz').find('li:has(em)').addClass('quiz-answer')
+ $('li.quiz-answer em').replaceWith(function(){
+   return $(this).contents()
+ })
+ $('.quiz').find('li').addClass('quiz-option')
+ $.quiz();
+</script>
+<script src='../libraries/widgets/bootstrap/js/bootstrap.min.js'></script>
+<script>  
+$(function (){ 
+  $("#example").popover(); 
+  $("[rel='tooltip']").tooltip(); 
+});  
+</script>  
+<!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="../libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+</html>
