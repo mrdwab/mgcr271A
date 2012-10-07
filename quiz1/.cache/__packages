@@ -1,0 +1,15 @@
+latticeExtra
+lattice
+RColorBrewer
+openintro
+plyr
+xtable
+ggplot2
+methods
+slidify2
+stats
+graphics
+grDevices
+utils
+datasets
+base
