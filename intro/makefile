@@ -1,6 +1,8 @@
 slides: index.html
-publish: index.html
+ghsetup:
 	git remote add origin https://github.com/ramnathv/tempslides.git
+	
+publish: index.html
 	git add .
 	git commit -a -m 'Publishing Slides to Github'
 	git push origin gh-pages

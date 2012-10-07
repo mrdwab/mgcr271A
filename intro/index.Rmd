@@ -12,7 +12,7 @@ hitheme: hemisu-light
 widgets: [mathjax, quiz, bootstrap]
 github:
   user: ramnathv
-  repo: slidify
+  repo: tempslides
 url:
   lib: ../libraries
   assets: ../assets
