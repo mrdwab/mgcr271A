@@ -1,0 +1,88 @@
+---
+title: Business Statistics
+subtitle: Quiz 1 Solutions
+author: Ramnath Vaidyanathan
+job: Assistant Professor, McGill 
+logo: mcgill_logo_small.png
+license: by-nc-sa
+framework: io2012
+theme: default
+highlighter: highlight.js
+hitheme: hemisu-light
+widgets: [mathjax, quiz, bootstrap]
+github:
+  user: ramnathv
+  repo: tempslides
+url:
+  lib: ../libraries
+  assets: ../assets
+---
+
+```{r setup, cache = F, echo = F, message = F, warning = F}
+# make this an external chunk that can be included in any file
+options(width = 70)
+opts_chunk$set(message = F, error = F, warning = F, echo = F, comment = NA, fig.align = 'center', dpi = 100, fig.height = 4.5, fig.width = 8, tidy = F, fig.path = 'fig/', cache = FALSE, cache.path = '.cache/')
+source('~/Dropbox/Inbox/R_Projects/Code_Snippets/prob.R')
+require(ggplot2); require(xtable); require(plyr); require(openintro)
+options(xtable.type = 'html')
+knit_hooks$set(inline = function(x) {
+  if(is.numeric(x)) {
+    round(x, getOption('digits'))
+  } else {
+    paste(as.character(x), collapse = ', ')
+  }
+})
+knit_hooks$set(plot = knitr:::hook_plot_html)
+```
+
+## Problem 1 ##
+
+<style type="text/css">
+article > p, article li{
+/*  font-family: "Lucida Grande";*/
+/*  color: #363636;*/
+}
+</style>
+
+**Exercise 1 2.59 The "January effect."** Some people think that the behavior of the stock market in January predicts its behavior for the rest of the year. Take the explanatory variable x to be the percent change in a stock market index in January and the response variable y to be the change in the index for the entire year. We expect a positive correlation between x and y because the change during January contributes to the full year’s change. Calculation based on 38 years of data gives
+
+---
+
+## Step 1. Understand the Problem ##
+
+The first step is to understand what is given, what is being asked and putting them down on paper. For this question, we have
+
+**REQUIRED**: Compute percent variation explained by yearly changed in index.
+
+**GIVEN**   :  Mean, Variance of x, y and Correlation between x, y
+
+---
+
+## Step 2. Plan your Solution
+
+The second step is to plan your solution by listing down concepts that will help you to get from what is given to what is required.
+For this question, recall that 
+
+1. The percentage of variation explained by a regression is its coefficient of determination, $R^2$, 
+2. For a regression with only one explanatory variable, the coefficient of determination equals the square of the correlation coefficient.
+
+---
+
+## Solution ##
+
+Let us look at the costs and revenues
+
+$$
+\begin{aligned}
+Costs & = 6,000,000 + 800 \times Sales \\
+Revenues & = 4,000 \times Sales
+\end{aligned}
+$$
+
+Hence, profits are given by $$Profit = 3,200\times Sales - 6,000,000.$$ We can compute the expected profits as
+
+$$E[Profit] = 3,200 \times E[Sales] - 6,000,000$$
+
+Note that $E[Sales]$ can be calculated as `r 0.10 * 1500  + 0.25 * 2000 + 0.35 * 2500 + 0.30 * 3000`. Hence $E[Profit] = `r 3200 * 2425 - 6000000`$.
+
+Since the expected profit from marketing the produce themselves exceeds the profits from selling their rights, they should NOT sell it.

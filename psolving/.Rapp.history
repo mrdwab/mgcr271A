@@ -1,0 +1,479 @@
+treeDiag(c('Dow Jones rise?', 'NASDAQ rise?'),#
+   c(0.53, 0.47), list(c(0.75, 0.25), c(0.72, 0.28)),#
+   solSub=list(c("(a)", "(b)"), c("(c)", "(d)")), solwd=0.08)
+treeDiag(#
+  c('Watered Plant?','Plant Alive?'),#
+  c(0.9, 0.1), #
+  list(c(.85, .15), c(.10, .90)),#
+  solSub = list(c('(a)', '(b)'), c('(c)', '(d)'))#
+)
+treeDiag(#
+  c('Watered Plant?','Plant Alive?'),#
+  c(0.9, 0.1), #
+  list(c(.85, .15), c(.10, .90)),#
+  solSub = list(c('(a)', '(b)'), c('(c)', '(d)'))#
+, cex.main = 1.5)
+treeDiag(#
+  c('Watered Plant?','Plant Alive?'),#
+  c(0.9, 0.1), #
+  list(c(.85, .15), c(.10, .90)),#
+  solSub = list(c('(a)', '(b)'), c('(c)', '(d)'))#
+, cex.main = 2)
+treeDiag(#
+  c('Watered Plant?','Plant Alive?'),#
+  c(0.9, 0.1), #
+  list(c(.85, .15), c(.10, .90)),#
+  solSub = list(c('(a)', '(b)'), c('(c)', '(d)'))#
+, cex.main = 4)
+0.09/(0.09 + 0.135)
+x = 1
+message('this is x = ', x)
+create_deck <- function(deckdir, git = T){#
+  message('Creating slide directory at', deckdir, '...')#
+  dir.create(deckdir)#
+  if (git = T){#
+    message('Initializing git repository...')#
+    system("git init")#
+    system("git commit --allow-empty -m 'Initial Commit'")#
+    message('Checking Out gh-pages branch...')#
+    system('git checkout -b gh-pages')#
+  }#
+  message('Finished creating slide directory')#
+}
+dir()
+system("rm -rf .git")
+dir()
+dir(all.files = T)
+message('Creating slide directory at', deckdir, '...')
+deckdir = 'and'
+message('Creating slide directory at', deckdir, '...')
+create_deck <- function(deckdir, git = T){#
+  message('Creating slide directory at', deckdir, '...')#
+  dir.create(deckdir)#
+}
+git = F
+if (git = T){#
+    message('Initializing git repository...')#
+    system("git init")#
+    system("git commit --allow-empty -m 'Initial Commit'")#
+    message('Checking Out gh-pages branch...')#
+    system('git checkout -b gh-pages')#
+  }
+system('rm -rf .git')
+git status
+system('git status')
+create_deck <- function(deckdir, git = T){#
+  message('Creating slide directory at', deckdir, '...')#
+  dir.create(deckdir)#
+  if (git == T){#
+    message('Initializing git repository...')#
+    system("git init")#
+    system("git commit --allow-empty -m 'Initial Commit'")#
+    message('Checking Out gh-pages branch...')#
+    system('git checkout -b gh-pages')#
+  }#
+  system('touch slides.Rmd')#
+  message('Finished creating slide directory')#
+}
+setwd('~/Desktop')
+create_deck('myslides')
+system('git branch -v')
+system('git checkout master')
+system('git status')
+system('rm -rf .git')
+system('git status')
+create_deck <- function(deckdir, git = T){#
+  message('Creating slide directory at', deckdir, '...')#
+  dir.create(deckdir)#
+  setwd(deckdir)#
+  if (git == T){#
+    message('Initializing git repository...')#
+    system("git init")#
+    system("git commit --allow-empty -m 'Initial Commit'")#
+    message('Checking Out gh-pages branch...')#
+    system('git checkout -b gh-pages')#
+  }#
+  system('touch slides.Rmd')#
+  message('Finished creating slide directory')#
+}
+create_deck('myslides')
+dir()
+system('git status')
+create_deck <- function(deckdir, git = T){#
+  message('Creating slide directory at', deckdir, '...')#
+  dir.create(deckdir)#
+  setwd(deckdir)#
+  if (git == T){#
+    system("git init")#
+    system("git commit --allow-empty -m 'Initial Commit'")#
+    message('Checking out gh-pages branch...')#
+    system('git checkout -b gh-pages')#
+  }#
+  system('touch slides.Rmd')#
+  message('Finished creating slide directory')#
+}
+setwd("..")
+dir()
+system('rm -rf myslides')
+dir()
+create_deck('myslides')
+system('git status')
+system('rm -rf myslides')
+library(ggplot2)
+library(ggthemes)
+qplot(carat, price, data = dsamp, colour = cut) + theme_igray()
+dsamp <- diamonds[sample(nrow(diamonds), 1000), ]
+qplot(carat, price, data = dsamp, colour = cut) + theme_igray()
+(qplot(carat, price, data = dsamp, colour = cut) + theme_few() + #
+    scale_colour_few())
+setwd('~/Desktop/rJekyll')
+source('R/utils.R')
+source('R/process.R')
+x = process_page('inst/testpage.Rmd')
+x
+source('R/utils.R')
+source('R/layouts.R')
+read_layouts('themes/minimal/layouts')
+read_layouts('themes/minimal/layouts')
+page = split_page('inst/testpage.Rmd')
+source('R/process.R')
+page = split_page('inst/testpage.Rmd')
+page
+layouts = get_layouts('themes/minimal/layouts')
+layouts
+source('R/render.R')
+render_page(page, layouts)
+library(whisker)
+render_page(page, layouts)
+page = split_page('inst/testpage.Rmd')
+page
+render_page(page, layouts)
+page = split_page('inst/testpage.Rmd')
+cat(render_page(page, layouts), file = 'index.html')
+layouts = get_layouts('themes/minimal/layouts')
+cat(render_page(page, layouts), file = 'index.html')
+x = 'inst/testpage.Rmd' %|% split_page %|% knit
+library(knitr)
+x = 'inst/testpage.Rmd' %|% split_page %|% knit
+x = 'inst/testpage.Rmd' %|% split_page
+x
+x = 'inst/testpage.Rmd' %|% knit %|% split_page
+x
+xx
+x
+x %|% to_html
+source('R/process.R')
+x %|% to_html
+library(markdown)
+x %|% to_html
+page = x %|% to_html
+cat(render_page(layouts$page, page), file = 'index.html')
+page
+layouts
+render_page(layouts$page, page)
+layouts$page
+whisker.render(layouts$page, page, partials = layouts)
+render_page(page, layouts)
+cat(render_page(page, layouts), file = 'index.html')
+source('R/main.R')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html
+page
+layouts = get_layouts('themes/minimal/layouts')
+layouts
+whisker.render(page, layouts)
+page
+layouts
+cat(render_page(page, layouts), file = 'index.html')
+layout_dir = c('themes/minimal/layouts', 'inst/highlighters/highlight.js')#
+layouts = get_layouts(layout_dir)
+layouts
+source('R/main.R')
+source('R/main.R')
+source('R/main.R')
+source('R/main.R')
+source('R/main.R')
+source('R/main.R')
+source('R/main.R')
+source('R/main.R')
+source('R/main.R')
+source('R/main.R')
+source('R/main.R')
+source('R/main.R')
+source('R/main.R')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html
+page
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+update.packages()
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/prettify')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/prettify')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/prettify')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/prettify')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/prettify')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+doc = 'inst/testpage.Rmd'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/midnight/layouts', 'inst/highlighters/prettify')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'index.html')
+setwd('~/Desktop/rjblog')
+x = yaml.load_file('themes/twitter/theme.yml')
+x
+x$stylesheets
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html
+pag
+page
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)
+layouts
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js/layouts')#
+layouts = get_layouts(layout_dir)
+layouts
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js/layouts')#
+layouts = get_layouts(layout_dir)
+layouts
+cat(render_page(page, layouts), file = 'about.html')
+cat(render_page(page, layouts), file = 'about.html')
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+x = 'a : b'
+yaml.load_file(x)
+x = 'a: b'
+yaml.load_file(x)
+x = 'a: b'
+yaml.load('a : b')
+yaml.load('a: b')
+expand_layout <- function(layout, layouts){#
+  mpat <- "^---\nlayout\\s*: ([[:alnum:]]+)\n---\n(.*)$"#
+  has_parent <- grepl(mpat, layout)#
+  if (has_parent){#
+     main <- layouts[[gsub(mpat, '\\1', layout)]]#
+     content <- gsub(mpat, "\\2", layout)#
+     layout <- sub("{{{ content }}}", content, main, fixed = TRUE)#
+   }#
+  return(layout)#
+}
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+layouts
+page
+page = 'pages/about.md'
+txt = str_split_fixed(read_file(page), '\n---', 2)
+txt
+meta = yaml.load(gsub("^---\n+", '', txt[1]))
+meta
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html
+page
+page = doc %|% knit %|% split_page
+page
+page = doc %|% knit %|% split_page %|% to_html
+page
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+cat('navigation')
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+doc = 'pages/about.md'#
+page = doc %|% knit %|% split_page %|% to_html#
+layout_dir = c('themes/twitter/layouts', 'widgets/highlight.js')#
+layouts = get_layouts(layout_dir)#
+cat(render_page(page, layouts), file = 'about.html')
+setwd('~/Desktop/temp')
+library(slidify2)
+setwd('psolving')
+slidify2('index.Rmd')
+system('open index.html')
+system('open index.html')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+system('open index.html')
+system('open index.html')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+slidify2('index.Rmd')
+"%||%" <- function(a, b) {#
+  if (!is.null(a)) a else b#
+}
+a = 10
+x = a %||% b
+x
+b = 20
+x = a %||% b
+x
+a = NULL
+x = a %||% b
+x
+library(hof)
+pluck
+zip_vectors <- function(...){#
+  x = list(...)#
+  lapply(seq_along(x[[1]]), function(i) lapply(x, pluck(i)))#
+}#
+#
+#' Stolen from Hadley's HOF package#
+pluck <- function (element){#
+  function(x) x[[element]]#
+}
+zip_vector(x = c(1, 2, 3), y = c(4, 5, 6))
+zip_vectors(x = c(1, 2, 3), y = c(4, 5, 6))
+zip_vectors(name = c('John', 'Jane'), age = c(20, 30)))
+zip_vectors(name = c('John', 'Jane'), age = c(20, 30))
+install_github('mustache', 'edwindj')
+library(devtools)
+install_github('mustache', 'edwindj')
+install_github('mustache', 'edwinj')
+install_github('whisker', 'edwindj')
+library(whisker)
+help(package = 'whisker')
+rowSplit(mtcars)
+library(whisker)
+rowSplit(mtcars)
+rowSplit
