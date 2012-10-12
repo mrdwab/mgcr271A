@@ -1,0 +1,318 @@
+---
+title: Business Statistics
+subtitle: Quiz 2 Solutions
+author: Ramnath Vaidyanathan
+job: Assistant Professor, McGill 
+logo: mcgill_logo_small.png
+license: by-nc-sa
+framework: io2012
+theme: default
+highlighter: highlight.js
+hitheme: hemisu-light
+widgets: [mathjax, quiz, bootstrap]
+github:
+  user: ramnathv
+  repo: tempslides
+url:
+  lib: ../libraries
+  assets: ../assets
+--- &radio .quiz
+
+
+
+
+## Question 1A
+
+<style type="text/css">
+img.center {
+  display:block;
+  margin: auto auto;
+}
+</style>
+
+In order to determine if smoking causes cancer, researchers surveyed a large sample of adults.  For each adult, they recorded whether the person had smoked regularly at any period in their life and whether the person had cancer.  They then compared the proportion of cancer cases in those who had smoked regularly at some time in their life with the proportion of cases in those who had never smoked regularly at any point in their life.  The researchers found a higher proportion of cancer cases among those who had smoked regularly than among those who had never smoked regularly.  This is:
+
+1. _an observational study._
+2. a double blind experiment.
+3. a block design.
+4. an experiment, but not a double blind experiment.
+
+--- &radio .quiz
+
+## Question 1B
+
+In order to assess the effects of exercise on reducing cholesterol, a researcher sampled 50 people from a local gym who exercised regularly and 50 people from the surrounding community who did not exercise regularly.  They each reported to a clinic to have their cholesterol measured.  The subjects were unaware of the purpose of the study, and the technician measuring the cholesterol was not aware of whether subjects exercised regularly or not.  This is:
+
+	
+1. _an observational study._
+2. an experiment, but not a double-blind experiment.
+3. a double-blind experiment.
+4. a matched pairs experiment.
+
+--- &radio .quiz
+
+## Question 1C
+
+In order to investigate whether women are more likely than men to prefer Democratic candidates, a political scientist selects a large sample of registered voters, both men and women.  She asks every voter whether they voted for the Republican or the Democratic candidate in the last election.  This is:
+
+1. a multistage sample.
+2. a double blind experiment.
+3. a block design.
+4. _an observational study._
+
+--- &checkbox .quiz .smaller
+
+## Question 2
+
+Recall that when we standardize the values of a variable, the standardized value has mean 0 and standard deviation 1.  Suppose we measure two variables, X and Y, on each of several subjects. We standardize both variables and then compute the least-squares regression line of Y on X for these standardized values.  Suppose the slope of this least-squares regression line is –0.44. Select ALL statements which are TRUE.
+
+1. the correlation will be 1.0.
+2. the intercept will also be –0.44.
+3. _the intercept will be zero._
+4. _the correlation will be –0.44._
+5. the intercept will be 1.0.
+
+*** explanation
+
+The answer to this question relies on two important ideas. One, the regression line always passes through the point $(\bar{x}, \bar{y})$. Two, the slope of the regression line equals $r \times s_y/s_x$. By standardizing $X$ and $Y$, we are now dealing with two variables whose means are zero and standard deviation is one. Hence, we have slope = $-0.44 \times 1/1 = -0.44$, and intercept = 0 (line passes through (0, 0)). [Press p for more details]
+
+*** pnotes
+
+If you would rather understand based on formulae, here is the solution. Let us represent the standardized values of $X$ and $Y$ using $zX$ and $zY$. We know that $\mu_{zX} = \mu_{zY} = 0$ and $\sigma_{zX} = \sigma_{zY} = 1$. Moreover, correlation between $zX$ and $zY$ is still -0.44, since it does not depend on the units. Using the formula for slope ($b_1 = r \times s_y/s_x$) and intercept ($b_0 = \bar{y} - b_1 \times \bar{x}$)
+
+$$
+\begin{aligned}
+b_1 & = -0.44 \times 1/1 \\
+b_0 & = 0 - (-0.44) \times 0  \\
+    & = 0
+\end{aligned}
+$$
+
+--- &radio .quiz
+
+## Question 3
+
+Suppose that the correlation between X and Y is POSITIVE. Which of the following numbers will be higher, the correlation between X and Y, or the proportion of the variance in Y that is explained by X?
+
+1. They will be the same.
+2. The proportion of variance in Y explained by X will be higher
+3. _The correlation will be higher._
+4. There is no way to tell
+
+*** explanation
+
+The key to this question is to recognize that the proportion of variance in Y explained by X is the square of the correlation coefficient. Since, correlation is always lesser than or equal to one, its square can never be larger than itself. (i.e $r^2 \le r$).
+
+--- &radio .quiz
+
+## Question 4
+
+Consider a scatterplot with an outlier. How would this outlier affect the correlation coefficient?
+
+1. It would not affect the correlation coefficient at all.
+2. An outlier is not representative of the actual relationship so it should be disregarded.
+3. It would increase the correlation coefficient by making a stronger pattern appear in the data that was unknown before.
+4. It would make the correlation coefficient smaller because it pulls the best fitting line toward it, and away from the rest of the data.
+5. _There is not enough information to tell._
+
+*** explanation
+
+See next slide for the solution.
+
+--- .smaller
+
+## Solution 4
+
+Outliers influence the correlation coefficient, as they pull the line of best fit towards them. However, it is possible for outliers to both reduce, or amplify the correlation coefficient, based on the context. For example, consider the two scatterplots below. The line of best fit with the outlier is shown in blue and without the outlier is shown in red. 
+
+<div class="rimage center"><img src="fig/unnamed-chunk-11.png" width="45%" class="plot" />
+<img src="fig/unnamed-chunk-12.png" width="45%" class="plot" /></div>
+
+
+Note that in the case on the left, having the outlier reduces the strength of the relationship, while in the case on the right, the outlier seems to create an implied linear relationship, when there is actually none.
+
+--- &checkbox .quiz
+
+## Question 5A
+
+The correlation between two scores on tests was found to be exactly 1. Which of the following would be TRUE regarding the corresponding scatterplot? Select ALL that apply.
+
+1. The slope of the best fitting line would be 1.
+2. _The best fitting line would have an uphill (positive slope)._
+3. _Every point would lie along a perfect straight line, with no deviations at all._
+
+*** explanation
+
+A correlation of 1 does NOT imply a slope of ONE. A simple example would be looking at heights and weights of people. The correlation will be close to ONE, but clearly the weights and heights of people are NOT equal.
+
+--- &checkbox .quiz
+
+## Question 5B
+
+Which of the following statements is true?
+
+1. The correlation coefficient equals the proportion of times two variables lie on a straight line.
+2. The correlation coefficient will be +1.0 if all the data lie on a perfectly horizontal straight line.
+3. The correlation coefficient measures the fraction of outliers that appear in a scatterplot.
+4. _The correlation coefficient is a unitless number and must always lie between –1.0 and +1.0, inclusive._
+
+*** explanation
+
+(1) and (3) are clearly FALSE. If the points lie on a horizontal line as in (2), there is no relationship between x and y, implying correlation will be ZERO. The only true statement is (4).
+
+
+---
+
+## Question 6
+
+A statistics professor is interested in understanding the relationship between number of hours spent studying (Y) and the number of credits a student takes in a semester (X). After collecting data, he finds that both variables are normally distributed. The mean number of credits taken by students is 13.4 and the standard deviation is 2.2. The mean number of hours spent studying is 14.8 and the correlation between the two variables is 0.48. He conducts a linear regression of Y vs. X and finds that the slope equals one.
+
+Hint. Jot down what is given, figure out what is missing, find the connection!
+
+- $\bar{x} = 13.4, s_x = 2.2 $
+- $\bar{y} = 14.8 $
+- $r = 0.48 $
+- $b_1 = 1$
+
+--- &radio .quiz .smaller
+
+## Question 6
+
+Approximately what percentage of students study more than 21.5 hours? Select the CLOSEST answer.
+	
+1. 20
+2. 10
+3. _7_
+4. 4
+5. Cannot be Determined
+
+*** explanation
+
+We want to compute $P(Y > 21.5)$. We know that $Y$ is normally distributed with mean 14.8. If We knew the standard deviation, the probability is straight-forward to calculate. Now, we know that $b_1 = r \times s_y/s_x$. We are given $b_1 = 1$, $r = 0.48$ and $s_x = 2.2$. Plugging these values in, we get $s_y = b_1 \times s_x/r$, which equals 4.5833. We can now compute $P(Y > 21.5)$ using the mean and standard deviation. [Press p to see visualization of probability]
+
+*** pnotes
+
+<div class="rimage center"><img src="fig/unnamed-chunk-2.png"  class="plot" /></div>
+
+
+--- &radio .quiz
+
+## Question 7A
+
+It is known that in the United States, well-educated people are less likely to smoke. But what about other nations, where there may be different cultures and/or attitudes towards smoking? In a 1998 study of the relationship between education and smoking in France, a random sample of 334 French men was classified according to their education level (elementary, high-school, or university) and their smoking habits (smoker or non-smoker).
+
+
+1. This study is an experiment, since each subject was classified into one of the six possible combinations of education level and smoking habits.
+2. _This study is an observational study, since researchers did not assign the men to be smokers or non-smokers, or to one of the education levels._
+3. This study is an experiment, since it was based on a random sample.
+4. This study is a combination of both an experiment and an observational study.
+
+--- &radio .quiz
+
+## Question 7B
+
+In an experiment to see if aspirin reduces the chance of having a heart attack, a placebo is:
+
+1. the place where the subjects go when they have a heart attack.
+2. the sampling method.
+3. the randomization procedure
+4. a procedure for deciding who gets the aspirin treatment.	
+5. _a dummy pill that looks like aspirin but has no active ingredients._
+
+--- &radio .quiz .smaller
+
+## Question 7C
+
+For their 1992 study “The Effect of Country Music on Suicide” (published in Social Forces, vol. 71, p. 211), researchers Stack and Gundlach investigated various American communities, recording the number of minutes of daily radio airtime devoted to country songs and the suicide rate. They found a moderately strong positive correlation. In their paper, the researchers explain the results by saying that “…the themes found in country music foster a suicidal mood ...” (emphasis added).
+
+<!-- A news headline (The Independent [London], October 1, 2004, p. 15) about the research echoed these sentiments when it said, “Strange But True: Country Music Saps Will to Live.” The research is even cited on various suicide-prevention websites, some with headings such as “Country Music Increases Suicide Risk.” -->
+
+1. Based on this study, can we have confidence in causality between country music and suicide?
+2. Yes, causality is indicated by the moderately strong correlation.	
+3. Yes, as long as the communities were sampled randomly, and the number of communities (the sample size) was sufficiently large.
+4. _No, because the lack of assignment of communities to different levels of country music listening means there is a possibility of lurking variables._
+5. Yes, since different communities listened to different levels of country music, meaningful experimental comparisons can be made.
+
+--- &radio .quiz .smaller
+
+## Question 8A
+
+High blood pressure is unhealthy. Here are the results of one of the studies that link high blood pressure to death from cardiovascular disease. The researchers classified a group of white males aged 35 to 64 as having Low blood pressure or High, then followed the subjects for five years. [Press p to see the study results]
+
+What would be an appropriate calculation to do, to show the linkage between high blood pressure and cardiovascular death?
+
+1. _conditional column percentages_
+2. conditional row percentages
+3. the five-number summary of both variables
+4. the correlation coefficient r
+5. none of these
+
+*** explanation
+
+To see the linkage between high blood pressure and cardiovascular death, we need to compare the probability of death for the two cases of high and low blood pressures respectively. Hence, we need the conditional probability of death given high/low blood pressure, which are the conditional column percentages.
+
+*** pnotes
+
+<img src='http://i.imgur.com/fc9wU.gif' class='center' />
+
+---
+
+## Question 13
+
+According to the information that comes with a certain prescription drug, when taking this drug, there is a 20% chance of experiencing nausea (N) and a 50% chance of experiencing decreased sexual drive (D). The information also states that there is a 15% chance of experiencing both side effects.
+
+<img src='img/q13-venn.png' height='60%' class='center' />
+
+
+--- .quiz &radio
+
+## Question 13A
+
+What is the probability of experiencing nausea or a decrease in sexual drive?
+
+1. 0.10
+2. 0.70
+3. 0.85	
+4. 0.40
+5. _0.55_
+
+*** explanation
+
+The probability of experiencing N or D can be calculated by adding the probability of experiencing N with the probability of experiencing D, and subtracting the probability of experiencing both, since we are double counting it in both events. Hence, we have
+$P(N or D) = 0.20 + 0.50 - 0.15 $ , which gives us 0.55.
+
+--- .quiz &radio
+
+## Question 13B
+
+What is the probability of experiencing exactly one of the two side effects?
+	
+1. 0.10
+2. _0.40_
+3. 0.55
+4. 0.70
+5. 0.85
+
+*** explanation
+
+This question differs from the previous one in that we are now interested in the possibility of only one of N or D happening, not both. Hence, we just subtract the probability of both happening from the probability of N or D happening. In other words, P(N or D but NOT both) is given by P(N or D) - P(N and D), which gives us $0.55 - 0.15 = 0.40$ 
+
+--- .quiz &radio
+
+What is the probability of experiencing neither of the side effects?
+	
+1. 0.85	
+2. 0.40
+3. _0.45_
+4. 0.70
+5. 0.10
+
+*** explanation
+
+## Question 13 C
+
+The event experiencing NEITHER side effects is the `complement` of the event, experiencing either of the side effects. Hence the probability is just one minus the probability of experiencing either of the side effects, which gives us $1 - 0.55 = 0.45 $.
+
+
+
+
