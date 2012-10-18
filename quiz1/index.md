@@ -6,7 +6,6 @@ job: Assistant Professor, McGill
 logo: mcgill_logo_small.png
 license: by-nc-sa
 framework: io2012
-theme: default
 highlighter: highlight.js
 hitheme: hemisu-light
 widgets: [mathjax, quiz, bootstrap]
