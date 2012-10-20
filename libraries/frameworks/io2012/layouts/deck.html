@@ -24,9 +24,11 @@
         <h2>{{ subtitle }}</h2>
         <p>{{ author }}<br/>{{ job }}</p>
       </hgroup>
-      <a href="https://github.com/{{ github.user }}/{{ github.repo }}/zipball/gh-pages" class="example">
+      {{# github }}
+      <a href="https://github.com/{{user}}/{{repo}}/zipball/gh-pages" class="example">
         Download
       </a>
+      {{/ github }}
       <footer class = 'source'>
         <a href='http://creativecommons.org/licenses/{{{ license }}}/3.0/'>
         <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/{{{ license }}}.png'>
