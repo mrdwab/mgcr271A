@@ -5,13 +5,8 @@ author: Ramnath Vaidyanathan
 job: Assistant Professor, McGill 
 logo: mcgill_logo_small.png
 license: by-nc-sa
-framework: io2012
-highlighter: highlight.js
 hitheme: hemisu-light
 widgets: [mathjax, quiz, bootstrap]
-github:
-  user: ramnathv
-  repo: tempslides
 url:
   lib: ../libraries
   assets: ../assets
