@@ -10,7 +10,7 @@ widgets: [mathjax, quiz, bootstrap]
 url:
   lib: ../libraries
   assets: ../assets
---- &radio .quiz
+--- &radio .quiz .smaller
 
 ```{r setup, cache = F, echo = F, message = F, warning = F}
 # make this an external chunk that can be included in any file
@@ -44,6 +44,10 @@ In order to determine if smoking causes cancer, researchers surveyed a large sam
 2. a double blind experiment.
 3. a block design.
 4. an experiment, but not a double blind experiment.
+
+*** explanation
+
+It is an `observational study` since the researchers did not control the explanatory variable: smoker.
 
 --- &radio .quiz
 
@@ -220,7 +224,7 @@ We want to compute $P(Y > 21.5)$. We know that $Y$ is normally distributed with 
 gnorm(14.8, 4.58, a = 21.5)
 ```
 
---- &radio .quiz
+--- &radio .quiz .smaller
 
 ## Question 7A
 
@@ -232,7 +236,7 @@ It is known that in the United States, well-educated people are less likely to s
 3. This study is an experiment, since it was based on a random sample.
 4. This study is a combination of both an experiment and an observational study.
 
---- &radio .quiz
+--- &radio .quiz .smaller
 
 ## Question 7B
 
@@ -300,6 +304,8 @@ Which of the tables is the appropriate table of conditional percents to discover
 
 *** explanation
 
+Table A gives the conditional probability of being insured based on the region a person lives. Hence it is most appropriate to answer the question at hand.
+
 
 --- .smaller .quiz &checkbox
 
@@ -313,6 +319,10 @@ A stack of four cards contains two red cards and two black cards.  I select two 
 4. independent
 5. _none of these_
 
+*** explanation
+
+It is possible for both cards selected to be Red. Hence A and B are `not disjoint`. There are only four cards in the stack. Hence if A is red, the chances that B is red are lower. Hence, A and B are `not independent`. They are not `complements` since their probabilities don't add up to one. 
+
 --- .smaller .quiz &checkbox
 
 ## Question 9B ##
@@ -324,6 +334,10 @@ Two people are selected simultaneously and at random from a very large populatio
 3. disjoint.
 4. complements
 5. none of these
+
+*** explanation
+
+Clearly, both A and B can happen (Person 1 is Female and Person 2 is Male). Hence A and B are `not disjoint`. They are `independent` since the population is large and hence we can assume that the probability of Person 2 being Male remains unchanged after Person 1 is picked.
 
 --- .smaller .quiz &checkbox
 
@@ -641,6 +655,10 @@ Which of the following is the equation of the least-squares regression line of J
 3. Height = Age/12
 4. Height = 12 × (Age)
 
+*** explanation
+
+The easiest way to answer this question is to recognize that `height` is increasing with `age`, and a baby has some `height` event at `age = 0`. The only choice that fits these criteria is (b), which has a positive intercept and a positive slope.
+
 --- .quiz &radio
 
 ## Question 18B ##
@@ -651,6 +669,10 @@ John's parents decide to use the least-squares regression line of John's height 
 2. _such a prediction could be misleading, because it involves extrapolation._
 3. that the parents will get a fairly accurate estimate of his height at age 21 years because the data are clearly correlated.
 4. all of these
+
+*** explanation
+
+This is a clear case of extrapolation. Growth is rapid initially and tapers off as a person grows holder. Expecting the linear trend to continue and making predictions based on it for values well outside the sample leads to misleading predictions.
 
 
 
