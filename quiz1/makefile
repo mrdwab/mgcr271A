@@ -5,4 +5,4 @@ publish: index.html
 	git push origin gh-pages
 	
 %.html: %.Rmd
-	Rscript -e "library(slidify2); slidify2('$<', '$@')"
+	Rscript -e "library(slidify); slidify('$<', '$@')"

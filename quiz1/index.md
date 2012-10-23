@@ -9,9 +9,6 @@ framework: io2012
 highlighter: highlight.js
 hitheme: hemisu-light
 widgets: [mathjax, quiz, bootstrap]
-github:
-  user: ramnathv
-  repo: tempslides
 url:
   lib: ../libraries
   assets: ../assets
@@ -26,11 +23,6 @@ url:
 img.center {
   display:block;
   margin: auto auto;
-}
-article > p, article p, article li, article li.build {
-  color: black;
-  font-family: 'Arial';
-  font-size: 20px;
 }
 </style>
 
