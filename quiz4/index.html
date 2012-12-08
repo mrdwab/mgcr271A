@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz 4 Solutions</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Quiz 4 Solutions">
+  <meta name="author" content="Ramnath Vaidyanathan">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../quiz5/libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../quiz5/libraries/frameworks/io2012/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../quiz5/libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../quiz5/libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="../quiz5/libraries/frameworks/io2012/js/slides" 
+    src="../quiz5/libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+    <link rel="stylesheet" href = "../quiz5/libraries/widgets/quiz/css/jquery-quiz.css">
+<link rel="stylesheet" href = "../quiz5/libraries/widgets/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href = "../quiz5/libraries/widgets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href = "../assets/css/backgrounds.css">
+<link rel="stylesheet" href = "../assets/css/captions.css">
+<link rel="stylesheet" href = "../assets/css/custom.css">
+<link rel="stylesheet" href = "../assets/css/jquery-quiz.css">
+<link rel="stylesheet" href = "../assets/css/lists.css">
+<link rel="stylesheet" href = "../assets/css/quotes.css">
+<link rel="stylesheet" href = "../assets/css/ribbons.css">
+<link rel="stylesheet" href = "../assets/css/tables.css">
+<link rel="stylesheet" href = "../assets/css/text.css">
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    <!-- END LOGO SLIDE -->
+    
+
+    <!-- TITLE SLIDE -->
+    <!-- Should I move this to a Local Layout File? -->
+    <slide class="title-slide segue nobackground">
+      <aside class="gdbar">
+        <img src="../assets/img/mcgill_logo_small.png">
+      </aside>
+      <hgroup class="auto-fadein">
+        <h1>Quiz 4 Solutions</h1>
+        <h2>MGCR 271</h2>
+        <p>Ramnath Vaidyanathan<br/>Assistant Professor, McGill</p>
+      </hgroup>
+      
+      <footer class = 'license'>
+        <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+        <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+        </a>
+      </footer>
+    </slide>
+
+    <!-- SLIDES -->
+      <slide class="quiz smaller" id="q1a" style="background:;">
+  <hgroup>
+    <h2>Question 1A</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <style>
+.smaller p,
+.smaller li{
+ font-size: 0.7em;
+}
+iframe {
+  width: 1000px;
+  height: 600px;
+}
+</style>
+
+<p>A 95% confidence interval for the mean μ of a population is computed from a random sample and found to be 9 ± 3.  We may conclude: </p>
+
+<ol>
+<li>there is a 95% probability that μ is between 6 and 12. </li>
+<li>there is a 95% probability that the true mean is 9 and there is a 95% chance that the true margin of error is 3. </li>
+<li><em>if we took many, many additional random samples and from each computed a 95% confidence interval for μ, approximately 95% of these intervals would contain \(\mu\).</em></li>
+<li>all of the above.</li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>This is the definition of a confidence interval. Note that the true mean is a fixed number and hence the probability it is contained in an interval is either zero or one. It is the confidence interval that is random and hence we can only conclude that we have 95% confidence that the interval we constructed is one which contains the true mean.</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q1b" style="background:;">
+  <hgroup>
+    <h2>Question 1B</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>A 90% confidence interval for the mean \(\mu\) of a population is computed from a random sample and is found to be 9 ± 3.  Which of the following could be the 95% confidence interval based on the same data? </p>
+
+<ol>
+<li>9 ± 2 </li>
+<li>9 ± 3 </li>
+<li><em>9 ± 4</em> </li>
+<li>Without knowing the sample size, any of the above answers could be the 95% confidence interval.</li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>A 95% confidence interval is wider than a 90% confidence interval. Hence, (C) \(9 \pm 4\) is the only possible answer. </p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q2a" style="background:;">
+  <hgroup>
+    <h2>Question 2A</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>Nine airlines are selected at random.  For each airline, we record the current fee for checking a single bag.  The average for these 9 airlines is   $\mu = 25 $.  Assume that the current fee follows a normal distribution with unknown mean μ and standard deviation \(\sigma = 6\).  A 90% confidence interval for \(\mu\) is: </p>
+
+<ol>
+<li>25 ± 6.00. </li>
+<li><em>25 ± 3.29.</em> </li>
+<li>25 ± 9.87 </li>
+<li>25 ± 3.92. </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>A 90% confidence interval for \(\mu\) can be calculated as \(\bar{x} \pm z^{*} \times \sigma/\sqrt{n}\). Pluggin in values, we get \(25 \pm 3.29\).</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q2b" style="background:;">
+  <hgroup>
+    <h2>Question 2B</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>A researcher is interested in the size of the current balance of credit card holders.  To estimate this, he obtains the size of the current balance of a random sample of 25 credit card holders.  A 90% confidence interval for the mean current balance of credit card holders is found to be 662.72 ± 44.70.  Which of the following would produce a confidence interval with a smaller margin of error than this 90% confidence interval? </p>
+
+<ol>
+<li>Obtain the balances of only five credit card holders rather than 25, because five are likely to be more uniform than 25. </li>
+<li><em>Obtain the balances of 100 credit card holders rather than 25.</em> </li>
+<li>Compute a 99% confidence interval rather than a 90% confidence interval.  The increase in confidence indicates that we have a better interval. </li>
+<li>None of the above. </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>The margin of error decreases with increase in sample size and increases with the confidence level. Hence, only (B) will reduce the margin of error of the confidence interval.</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q3a" style="background:;">
+  <hgroup>
+    <h2>Question 3A</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>A random sample of six CEOs reported how many times per year they play tennis.  The data follows. </p>
+
+<pre><code>3 41 96 32 52 19
+</code></pre>
+
+<p>Assuming the number of games played is normally distributed and the population standard deviation σ = 10, a 95% confidence interval for μ is: </p>
+
+<ol>
+<li>(3, 96). </li>
+<li>(33.78, 44.22). </li>
+<li><em>(32.5, 48.5).</em> </li>
+<li>(28.5, 44.5). </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>We can compute from the data \(\bar{x} = 40.5\). Hence, we can compute the 95% confidence interval as \(40.5 \pm 8.0017\).</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q3b" style="background:;">
+  <hgroup>
+    <h2>Question 3B</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>In a large city, the percent of total spending that households devote to housing is normally distributed with mean μ and standard deviation σ = 9\%.  I select a simple random sample of four households and determine the percent of their total spending that is devoted to housing.  The four percentages are:</p>
+
+<pre><code>33% 39% 32% 36%
+</code></pre>
+
+<p>Based on these data, a 99% confidence interval for μ is: </p>
+
+<ol>
+<li>(29.22%, 40.78%). </li>
+<li>(26.18%, 43.82%). </li>
+<li><em>(23.41%, 46.59%).</em> </li>
+<li>(11.82%, 58.18%). </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>We can compute from the data \(\bar{x} = 35\). Hence, we can compute the 95% confidence interval as \(35 \% \pm 11.5912 \%\).</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q4a" style="background:;">
+  <hgroup>
+    <h2>Question 4A</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>In a large city, the percent of total spending that households devote to housing is normally distributed with mean μ and standard deviation σ = 9%.  If I want the margin of error for a 99% confidence interval to be ±1%, I should select a simple random sample of size: </p>
+
+<ol>
+<li>9. </li>
+<li>23. </li>
+<li>312. </li>
+<li><em>538.</em> </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>The margin of error is given by \(m = z^{*}\times \sigma/\sqrt{n}\). Hence, the sample size required for a given margin of error can be computed as \(\left(\frac{z^{*}\sigma}{m}\right)^{2}\). Substituting \(z^{*} = 2.5758\), \(m = 1\%\) and \(\sigma = 9\%\), we get \(n = 537.4266\). We round up the answer to get \(n = 538\).</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q4b" style="background:;">
+  <hgroup>
+    <h2>Question 4B</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>A local convenience store owner is interested in the average amount spent per shopper at a competing convenience store.  To find out, she randomly sampled 49 shoppers and asked how much they spent the last time they went to the competing store.  The mean expenditure of the 49 customers was 5.82.  Assuming the distribution of spending has a normal distribution with mean μ and standard deviation σ = $1.11, a 92% confidence interval for μ is: </p>
+
+<ol>
+<li>(5.59, 6.04). </li>
+<li><em>(5.54, 6.10).</em> </li>
+<li>(5.78, 5.85). </li>
+<li>(5.41, 6.23).</li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>We can compute compute the 92% confidence interval as \(5.82 \pm 0.2776\)</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q5a" style="background:;">
+  <hgroup>
+    <h2>Question 5A</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>In formulating hypotheses for a statistical test of significance, the null hypothesis is often:</p>
+
+<ol>
+<li><em>a statement of &quot;no effect&quot; or &quot;no difference&quot;.</em></li>
+<li>the probability of observing the data you actually obtained. </li>
+<li>a statement that the data are all 0. </li>
+<li>0.05. </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>The null hypothesis is always the statement that we are trying to disprove. It is a statement that asserts that whatever differences we observed are purely due to sampling variation and not because of any real &quot;effect&quot; or &quot;difference&quot;</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q5b" style="background:;">
+  <hgroup>
+    <h2>Question 5B</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>In tests of significance about an unknown parameter, the test statistic: </p>
+
+<ol>
+<li>is the value of the unknown parameter under the null hypothesis. </li>
+<li>is the value of the unknown parameter under the alternative hypothesis. </li>
+<li>measures the compatibility between the null and alternative hypotheses. </li>
+<li><em>measures the compatibility between the null hypothesis and the data.</em></li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>The test statistic is computed as the difference between the sample statistic and the parameter value according to the null, divided by standard error of the sample statistic. It is a measure of how compatible the data is will the null hypothesis. Large values of the test statistic indicate higher incompatibility, which lead us to reject the null hypothesis.</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q6" style="background:;">
+  <hgroup>
+    <h2>Question 6A</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>During the winter months, heating bills can be expensive.  A contractor claims that installing a new brand of insulation will considerably lower your heating bill (which was $205 last month).  If you were to test this claim using a hypothesis test, the statement of the null and alternative hypotheses, H0 and Ha, for μ would be:</p>
+
+<ol>
+<li>H0: μ  = 205 vs. Ha: μ \(\gt\) 205. </li>
+<li>H0: μ  = 205 vs. Ha: μ  ≠ 205. </li>
+<li><em>H0: μ  = 205 vs. Ha: μ \(\lt\) 205.</em></li>
+<li>H0: μ  = 105 vs. Ha: μ  \(\lt\) 105 because the rates would be considerably lower. </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>The contractor claims that the new brand of insulation will <strong>lower</strong> heating bill. Hence, the alternate hypothesis is Ha: μ  &lt; 205. The null should be written as H0: \(\mu \ge 205\). However, it is alright to just use the equal sign in the null (see Chapter 6 in the book.)</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q6b" style="background:;">
+  <hgroup>
+    <h2>Question 6B</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>The mean area μ of the several thousand apartments in a new development is advertised to be 1250 square feet.  A tenant group thinks that the apartments are smaller than advertised.  They hire an engineer to measure a sample of apartments to test their suspicion.  The appropriate null and alternative hypotheses, H0 and Ha, for μ are: </p>
+
+<ol>
+<li>H0: μ = 1250 and Ha: μ ≠ 1250. </li>
+<li><em>H0: μ = 1250 and Ha: μ \(\lt\) 1250.</em> </li>
+<li>H0: μ = 1250 and Ha: μ \(\lt\) 1250. </li>
+<li>not able to be specified without knowing the size of the sample used by the engineer.</li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>The tenant group claims that the apartments are <strong>smaller</strong> than advertised. Hence, the alternate hypothesis would be \(H_a: \mu < 1250\).</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q6c" style="background:;">
+  <hgroup>
+    <h2>Question 6C</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>Is the mean height for all adult American males between the ages of 18 and 21 now over 6 feet?  If the population of all adult American males between the ages of 18 and 21 has mean height of μ feet and standard deviation σ feet, which of the following null and alternative hypotheses would one test to answer this question? </p>
+
+<ol>
+<li><em>H0: μ = 6 vs. Ha: μ \(\gt\) 6</em> </li>
+<li>H0: μ = 6 vs. Ha:  \(\mu \lt 6\)</li>
+<li>H0: μ = 6 vs. Ha: μ ≠ 6 </li>
+<li>H0: μ = 6 vs. Ha: μ = 6 ±  , assuming our sample size is n. </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>We wish to test if the average height of american males between 18 and 21 is <strong>over</strong> 6 feet. Hence, the alternate hypothesis would be \(H_a: \mu > 6\).</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Question 7A</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>In a test of significance, assuming the null hypothesis is true, the probability that the test statistic will take a value at least as extreme as that actually observed is: </p>
+
+<ol>
+<li><em>the P-value of the test.</em> </li>
+<li>the level of significance of the test. </li>
+<li>the probability the null hypothesis is true. </li>
+<li>the probability the null hypothesis is false. </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>This is the definition of a p-value.</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Question 7B</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>In testing hypotheses, which of the following would be strong evidence against the null hypothesis?</p>
+
+<ol>
+<li>Using a small level of significance </li>
+<li>Using a large level of significance </li>
+<li><em>Obtaining data with a small P-value</em></li>
+<li>Obtaining data with a large P-value</li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>A small p-value indicates that the observed data is very unlikely if the null hypothesis were true. Since, we did observe the data that we did, it presents strong evidence against the null hypothesis.</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Question 8A</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>In a statistical test of hypotheses, we say the data are statistically significant at level \(\alpha\) if: </p>
+
+<ol>
+<li>α = 0.05. </li>
+<li>α is small. </li>
+<li><em>the P-value is less than α.</em> </li>
+<li>the P-value is larger than α. </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>This is the definition of statistical significance.</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Question 8B</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>In a test of statistical hypotheses, the P-value tells us: </p>
+
+<ol>
+<li>if the null hypothesis is true. </li>
+<li>if the alternative hypothesis is true. </li>
+<li>the largest level of significance at which the null hypothesis can be rejected. </li>
+<li><em>the smallest level of significance at which the null hypothesis can be rejected.</em> </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>Suppose we compute a p-value of 2%. It implies that we would reject the null hypothesis for all values \(\alpha > 2%\). So the p-value can be interpreted as the smallest level of significance at which the null hypothesis can be rejected.</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Question 9</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>The Survey of Study Habits and Attitudes (SSHA) is a psychological test that measures the motivation, attitude, and study habits of college students.  Scores range from 0 to 200 and follow (approximately) a normal distribution with mean 115 and standard deviation σ = 25.  You suspect that incoming freshmen have a mean μ, which is different from 115, because they are often excited and anxious about entering college.  To test your suspicion, you test the hypotheses H0: μ = 115, Ha: μ ≠ 115. You give the SSHA to 25 students who are incoming freshmen and find their mean score is 116.2. The p-value of your test is: </p>
+
+<ol>
+<li>0.1151. </li>
+<li>0.2302. </li>
+<li>0.4052. </li>
+<li><em>0.8104.</em> </li>
+<li>None of These</li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>We can compute the test score as \(z = z=\frac{\bar{x}-\mu_{0}}{\sigma/\sqrt{n}}\). Pluggin in values, we get \(z = 0.24\). Using the normal distribution table, we can find \(p = 0.8103\). See next slide for visualizing the p-value.</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-19">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<iframe src='http://www.statdistributions.com/normal?z=0.24'></iframe>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+      <slide class="quiz smaller" id="q11" style="background:;">
+  <hgroup>
+    <h2>Question 10</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>The level of calcium in the blood of healthy young adults follows a normal distribution with mean μ = 10 milligrams per deciliter and standard deviation σ = 0.4.  A clinic measures the blood calcium of 100 healthy pregnant young women at their first visit for prenatal care.  The mean of these 100 measurements is 9.8.  Is this evidence that the mean calcium level in the population from which these women come is less than 10?  To answer this, test the hypotheses H0: μ = 10, Ha: μ &lt; 10. The P-value of your test is: </p>
+
+<ol>
+<li><em>less than 0.0002.</em> </li>
+<li>0.3085. </li>
+<li>0.6170. </li>
+<li>greater than 0.99. </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>We can compute the test score as \(z = z=\frac{\bar{x}-\mu_{0}}{\sigma/\sqrt{n}}\). Plugging in values, we get \(z = -5\). Using the normal distribution table, we can find \(p \sim 0\). See next slide for visualizing the p-value.</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-21">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<iframe src='http://www.statdistributions.com/normal?z=-5'></iframe>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+      <slide class="quiz smaller" id="q12" style="background:;">
+  <hgroup>
+    <h2>Question 11</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>The nicotine content in cigarettes of a certain brand is normally distributed, with mean (in milligrams) μ and standard deviation σ = 0.1.  The brand advertises that the mean nicotine content of its cigarettes is 1.5, but measurements on a random sample of 100 cigarettes of this brand give a mean of 1.53.  Is this evidence that the mean nicotine content is actually higher than advertised?  To answer this, test the hypotheses H0: μ = 1.5, Ha: μ &gt; 1.5 at the 5% significance level.  You conclude: </p>
+
+<ol>
+<li><em>that H0 should be rejected.</em> </li>
+<li>that H0 should not be rejected. </li>
+<li>that Ha should be rejected. </li>
+<li>there is a 5% chance that the null hypothesis is true.</li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>We can compute the test score as \(z = z=\frac{\bar{x}-\mu_{0}}{\sigma/\sqrt{n}}\). Plugging in values, we get \(z = 3\). Using the normal distribution table, we can find \(p \sim 0.0013\). Since \(p \le \alpha\), we reject the null hypothesis \(H_0\).</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="quiz smaller" id="q13" style="background:;">
+  <hgroup>
+    <h2>Question 12</h2>
+  </hgroup>
+  <article>
+    
+<div class="quiz-single well new">
+  <p>Does vigorous exercise affect concentration?  In general, the time needed for people to complete a certain paper-and-pencil maze follows a normal distribution, with a mean of 30 seconds and a standard deviation of three seconds.  You wish to see if the mean time μ is changed by vigorous exercise, so you have a random sample of nine employees of your company (that you assume are representative of people in general) exercise vigorously for 30 minutes and then complete the maze.  It takes them an average of 31.2 seconds to complete the maze.  Use this information to test the hypotheses H0: μ = 30, Ha: μ ≠ 30 at the 1% significance level.  You conclude: </p>
+
+<ol>
+<li>that H0 should be rejected. </li>
+<li><em>that H0 should not be rejected.</em> </li>
+<li>that Ha should be accepted. </li>
+<li>this is a borderline case and no decision should be made. </li>
+</ol>
+
+  
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear">Clear</button>
+  
+  <div class="quiz-explanation">
+    <p>We can compute the test score as \(z = z=\frac{\bar{x}-\mu_{0}}{\sigma/\sqrt{n}}\). Plugging in values, we get \(z = 1.2\). Using the normal distribution table, we can find \(p = 0.2301\). Since \(p \gt \alpha\), we can NOT reject the null hypothesis \(H_0\). See next slide for a visualization.</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    
+  </hgroup>
+  <article>
+    <iframe src='http://www.statdistributions.com/normal?z=1.2'></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="q14" style="background:;">
+  <hgroup>
+    
+  </hgroup>
+  <article>
+    <p>During the winter months, heating bills can be expensive.  A contractor claims that installing a new brand of insulation will considerably lower your heating bill (which was $205 last month).  After conducting the test (assuming the data were provided), you find that the results are significant at the 5% level.  You may also conclude: 
+*A) the test would also be significant at the 10% level. 
+B) the test would also be significant at the 1% level. 
+C) all of these
+D) none of these</p>
+
+<p>An agricultural researcher plants 25 plots with a new variety of corn that is drought resistant and hence potentially more profitable.  The average yield for these plots is   = 150 bushels per acre.  Assume that the yield per acre for the new variety of corn follows a normal distribution with unknown mean μ and that a 95% confidence interval for μ is found to be 150 ± 3.29.  Which of the following is true? 
+A) A test of the hypotheses H0: μ = 150, Ha: μ ≠ 150 would be rejected at the 0.05 level. 
+B) A test of the hypotheses H0: μ = 150, Ha: μ &gt; 150 would be rejected at the 0.05 level. 
+*C) A test of the hypotheses H0: μ = 160, Ha: μ ≠ 160 would be rejected at the 0.05 level. 
+D) All the above. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+
+  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+<!-- Grab CDN jQuery, fall back to local if offline -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="../quiz5/libraries/widgets/quiz/js/jquery-1.7.min.js"><\/script>')</script>
+<!-- Load Javascripts for Widgets -->
+<!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script> -->
+<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="../quiz5/libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script src='../quiz5/libraries/widgets/quiz/js/jquery.quiz.js'></script>
+<script src='../quiz5/libraries/widgets/quiz/js/mustache.min.js'></script>
+<script type="text/javascript">
+ $('.quiz').find('li:has(em)').addClass('quiz-answer')
+ $('li.quiz-answer em').replaceWith(function(){
+   return $(this).contents()
+ })
+ $('.quiz').find('li').addClass('quiz-option')
+ $.quiz();
+</script>
+<script src='../quiz5/libraries/widgets/bootstrap/js/bootstrap.min.js'></script>
+<script>  
+$(function (){ 
+  $("#example").popover(); 
+  $("[rel='tooltip']").tooltip(); 
+});  
+</script>  
+<!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="../quiz5/libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+</html>

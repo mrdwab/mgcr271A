@@ -1,0 +1,243 @@
+--- #q1
+
+A 95% confidence interval for the mean μ of a population is computed from a random sample and found to be 9 ± 3.  We may conclude: 
+A) there is a 95% probability that μ is between 6 and 12. 
+B) there is a 95% probability that the true mean is 9 and there is a 95% chance that the true margin of error is 3. 
+*C) if we took many, many additional random samples and from each computed a 95% confidence interval for μ, approximately 95% of these intervals would contain μ. 
+D) all of the above. 
+
+A 90% confidence interval for the mean m of a population is computed from a random sample and is found to be 9 ± 3.  Which of the following could be the 95% confidence interval based on the same data? 
+A) 9 ± 2 
+B) 9 ± 3 
+*C) 9 ± 4 
+D) Without knowing the sample size, any of the above answers could be the 95% confidence interval. 
+
+--- #q2
+
+Nine airlines are selected at random.  For each airline, we record the current fee for checking a single bag.  The average for these 9 airlines is   = $25.  Assume that the current fee follows a normal distribution with unknown mean μ and standard deviation σ = $6.  A 90% confidence interval for μ is: 
+A) $25 ± $6.00. 
+*B) $25 ± $3.29. 
+C) $25 ± $9.87 
+D) $25 ± $3.92. 
+
+
+A researcher is interested in the size of the current balance of credit card holders.  To estimate this, he obtains the size of the current balance of a random sample of 25 credit card holders.  A 90% confidence interval for the mean current balance of credit card holders is found to be $662.72 ± $44.70.  Which of the following would produce a confidence interval with a smaller margin of error than this 90% confidence interval? 
+A) Obtain the balances of only five credit card holders rather than 25, because five are likely to be more uniform than 25. 
+*B) Obtain the balances of 100 credit card holders rather than 25. 
+C) Compute a 99% confidence interval rather than a 90% confidence interval.  The increase in confidence indicates that we have a better interval. 
+D) None of the above. 
+
+--- #q3
+
+A random sample of six CEOs reported how many times per year they play tennis.  The data follows.  
+3  41  96  32  52  19
+Assuming the number of games played is normally distributed and the population standard deviation σ = 10, a 95% confidence interval for μ is: 
+A) (3, 96). 
+B) (33.78, 44.22). 
+*C) (32.5, 48.5). 
+D) (28.5, 44.5). 
+
+In a large city, the percent of total spending that households devote to housing is normally distributed with mean μ and standard deviation σ = 9%.  I select a simple random sample of four households and determine the percent of their total spending that is devoted to housing.  The four percentages are:
+33% 39% 32% 36%
+Based on these data, a 99% confidence interval for μ is: 
+A) (29.22%, 40.78%). 
+B) (26.18%, 43.82%). 
+*C) (23.41%, 46.59%). 
+D) (11.82%, 58.18%). 
+
+--- #q4
+
+In a large city, the percent of total spending that households devote to housing is normally distributed with mean μ and standard deviation σ = 9%.  If I want the margin of error for a 99% confidence interval to be ±1%, I should select a simple random sample of size: 
+A) 9. 
+B) 23. 
+C) 312. 
+*D) 538. 
+
+
+A local convenience store owner is interested in the average amount spent per shopper at a competing convenience store.  To find out, she randomly sampled 49 shoppers and asked how much they spent the last time they went to the competing store.  The mean expenditure of the 49 customers was $5.82.  Assuming the distribution of spending has a normal distribution with mean μ and standard deviation σ = $1.11, a 92% confidence interval for μ is: 
+A) ($5.59, $6.04). 
+*B) ($5.54, $6.10). 
+C) ($5.78, $5.85). 
+D) ($5.41, $6.23). 
+
+--- #q5
+
+In formulating hypotheses for a statistical test of significance, the null hypothesis is often: 
+*A) a statement of “no effect” or “no difference.” 
+B) the probability of observing the data you actually obtained. 
+C) a statement that the data are all 0. 
+D) 0.05. 
+
+
+In tests of significance about an unknown parameter, the test statistic: 
+A) is the value of the unknown parameter under the null hypothesis. 
+B) is the value of the unknown parameter under the alternative hypothesis. 
+C) measures the compatibility between the null and alternative hypotheses. 
+*D) measures the compatibility between the null hypothesis and the data. 
+
+--- #q6-7
+
+During the winter months, heating bills can be expensive.  A contractor claims that installing a new brand of insulation will considerably lower your heating bill (which was $205 last month).  If you were to test this claim using a hypothesis test, the statement of the null and alternative hypotheses, H0 and Ha, for μ would be:
+A) H0: μ  = 205 vs. Ha: μ  > 205. 
+B) H0: μ  = 205 vs. Ha: μ  ≠ 205. 
+*C) H0: μ  = 205 vs. Ha: μ  < 205. 
+D) H0: μ  = 105 vs. Ha: μ  < 105 because the rates would be considerably lower. 
+
+
+The mean area μ of the several thousand apartments in a new development is advertised to be 1250 square feet.  A tenant group thinks that the apartments are smaller than advertised.  They hire an engineer to measure a sample of apartments to test their suspicion.  The appropriate null and alternative hypotheses, H0 and Ha, for μ are: 
+A) H0: μ = 1250 and Ha: μ ≠ 1250. 
+*B) H0: μ = 1250 and Ha: μ < 1250. 
+C) H0: μ = 1250 and Ha: μ > 1250. 
+D) not able to be specified without knowing the size of the sample used by the engineer. 
+
+Is the mean height for all adult American males between the ages of 18 and 21 now over 6 feet?  If the population of all adult American males between the ages of 18 and 21 has mean height of μ feet and standard deviation σ feet, which of the following null and alternative hypotheses would one test to answer this question? 
+*A) H0: μ = 6 vs. Ha: μ > 6 
+B) H0: μ = 6 vs. Ha: μ < 6 
+C) H0: μ = 6 vs. Ha: μ ≠ 6 
+D) H0: μ = 6 vs. Ha: μ = 6 ±  , assuming our sample size is n. 
+
+
+--- #q8
+
+In a test of significance, assuming the null hypothesis is true, the probability that the test statistic will take a value at least as extreme as that actually observed is: 
+*A) the P-value of the test. 
+B) the level of significance of the test. 
+C) the probability the null hypothesis is true. 
+D) the probability the null hypothesis is false. 
+
+In testing hypotheses, which of the following would be strong evidence against the null hypothesis? 
+A) Using a small level of significance 
+B) Using a large level of significance 
+*C) Obtaining data with a small P-value
+D) Obtaining data with a large P-value
+
+--- #q9
+
+In a statistical test of hypotheses, we say the data are statistically significant at level α if: 
+A) α = 0.05. 
+B) α is small. 
+*C) the P-value is less than α. 
+D) the P-value is larger than α. 
+
+
+In a test of statistical hypotheses, the P-value tells us: 
+A) if the null hypothesis is true. 
+B) if the alternative hypothesis is true. 
+C) the largest level of significance at which the null hypothesis can be rejected. 
+*D) the smallest level of significance at which the null hypothesis can be rejected. 
+
+--- #q10
+
+The Survey of Study Habits and Attitudes (SSHA) is a psychological test that measures the motivation, attitude, and study habits of college students.  Scores range from 0 to 200 and follow (approximately) a normal distribution with mean 115 and standard deviation σ = 25.  You suspect that incoming freshmen have a mean μ, which is different from 115, because they are often excited and anxious about entering college.  To test your suspicion, you test the hypotheses H0: μ = 115, Ha: μ ≠ 115.
+You give the SSHA to 25 students who are incoming freshmen and find their mean score is 116.2.  The p-value of your test is: 
+A) 0.1151. 
+B) 0.2302. 
+C) 0.4052. 
+*D) 0.8104. 
+E) None of These
+
+--- #q11
+
+The level of calcium in the blood of healthy young adults follows a normal distribution with mean μ = 10 milligrams per deciliter and standard deviation σ = 0.4.  A clinic measures the blood calcium of 100 healthy pregnant young women at their first visit for prenatal care.  The mean of these 100 measurements is   = 9.8.  Is this evidence that the mean calcium level in the population from which these women come is less than 10?  To answer this, test the hypotheses H0: μ = 10, Ha: μ < 10. The P-value of your test is: 
+*A) less than 0.0002. 
+B) 0.3085. 
+C) 0.6170. 
+D) greater than 0.99. 
+
+--- #q12
+
+The nicotine content in cigarettes of a certain brand is normally distributed, with mean (in milligrams) μ and standard deviation σ = 0.1.  The brand advertises that the mean nicotine content of its cigarettes is 1.5, but measurements on a random sample of 100 cigarettes of this brand give a mean of  = 1.53.  Is this evidence that the mean nicotine content is actually higher than advertised?  To answer this, test the hypotheses H0: μ = 1.5, Ha: μ > 1.5 at the 5% significance level.  You conclude: 
+*A) that H0 should be rejected. 
+B) that H0 should not be rejected. 
+C) that Ha should be rejected. 
+D) there is a 5% chance that the null hypothesis is true.
+
+--- #q13 
+
+Does vigorous exercise affect concentration?  In general, the time needed for people to complete a certain paper-and-pencil maze follows a normal distribution, with a mean of 30 seconds and a standard deviation of three seconds.  You wish to see if the mean time μ is changed by vigorous exercise, so you have a random sample of nine employees of your company (that you assume are representative of people in general) exercise vigorously for 30 minutes and then complete the maze.  It takes them an average of   = 31.2 seconds to complete the maze.  Use this information to test the hypotheses H0: μ = 30, Ha: μ ≠ 30 at the 1% significance level.  You conclude: 
+A) that H0 should be rejected. 
+*B) that H0 should not be rejected. 
+C) that Ha should be accepted. 
+D) this is a borderline case and no decision should be made. 
+
+--- #q14
+
+During the winter months, heating bills can be expensive.  A contractor claims that installing a new brand of insulation will considerably lower your heating bill (which was $205 last month).  After conducting the test (assuming the data were provided), you find that the results are significant at the 5% level.  You may also conclude: 
+*A) the test would also be significant at the 10% level. 
+B) the test would also be significant at the 1% level. 
+C) all of these
+D) none of these
+
+An agricultural researcher plants 25 plots with a new variety of corn that is drought resistant and hence potentially more profitable.  The average yield for these plots is   = 150 bushels per acre.  Assume that the yield per acre for the new variety of corn follows a normal distribution with unknown mean μ and that a 95% confidence interval for μ is found to be 150 ± 3.29.  Which of the following is true? 
+A) A test of the hypotheses H0: μ = 150, Ha: μ ≠ 150 would be rejected at the 0.05 level. 
+B) A test of the hypotheses H0: μ = 150, Ha: μ > 150 would be rejected at the 0.05 level. 
+*C) A test of the hypotheses H0: μ = 160, Ha: μ ≠ 160 would be rejected at the 0.05 level. 
+D) All the above. 
+
+--- #q15
+
+A financial advisor is working to create a new investment package for is clients.  The average return on current packages is 1.2%.  In an early experiment, she tries the new investment package with three clients and returns more than doubled to 3%.  Although the rate of return has doubled, the results are not statistically significant even at the 0.10 significance level.  The explanation is: 
+A) the placebo effect is present which limits statistical significance. 
+*B) the sample size is too small to determine if the observed increase cannot be reasonably attributed to chance. 
+C) that although the rate of return has more than doubled, in reality the actual increase is really 1.2%. 
+D) the calculation was in error.  The advisor forgot to include the sample size. 
+
+--- #q16
+
+Ten years ago the mean Math SAT score of all high school students who took the exam in a small high school was 490, with a standard deviation of 80.  This year, a boxplot of the scores of a random sample of 25 students in the high school who took the exam is given on the next page. The mean score of these 25 students is   = 530.  We assume the population standard deviation continues to be σ = 80.  To determine if there is evidence that the scores in the district have improved, the hypotheses H0: μ = 490, Ha: μ > 490 are tested using the z statistic, and the P-value is found to be 0.0062.
+
+A) at the 5% significance level, you have proved that H0 is false. 
+B) at the 5% significance level, you have proved that Ha is false. 
+C) it would have been more appropriate to use a two-sided alternative. 
+*D) none of the above. 
+
+--- #q17
+
+An engineer designs an improved light bulb.  The previous design had an average lifetime of 1200 hours.  The mean lifetime of a random sample of 2000 new bulbs is found to have a mean lifetime of 1201 hours.  Although the difference from the old mean lifetime of 1200 hours is quite small, the P-value is 0.03 and the effect is statistically significant at the 0.05 level.  If, in fact, there is no difference between the mean lifetimes of the new and old designs, the researcher has: 
+*A) committed a type I error. 
+B) committed a type II error. 
+C) a probability of being correct, which is equal to the P-value. 
+D) a probability of being correct, which is equal to 1 – (P-value). 
+
+
+--- #q18
+
+A medical researcher is working on a new treatment for a certain type of cancer.  The average survival time after diagnosis on the standard treatment is two years.  In an early trial, she tries the new treatment on three subjects, who have an average survival time after diagnosis of four years.  Although the survival time has doubled, the results are not statistically significant even at the 0.10 significance level.  Suppose, in fact, that the new treatment does increase the mean survival time in the population of all patients with this particular type of cancer.  The researcher has: 
+A) committed a type I error. 
+*B) committed a type II error. 
+C) incorrectly used a level 0.10 test when she should have used a 0.05 level test. 
+D) incorrectly used a level 0.10 test when she should have computed the P-value.
+
+--- #q19
+
+A researcher wishes to determine if listening to classical music improves the concentration of office workers.  To investigate this, he decides to see if office workers are able to complete a certain pencil-and-paper maze more quickly while listening to classical music.  Suppose the time (in seconds) needed for office workers to complete the maze while listening to classical music follows a normal distribution with mean μ and standard deviation σ = 4.  Suppose also, that in the general population, the time needed to complete the maze (without listening to classical music) follows a normal distribution with mean 40 and standard deviation σ = 4.  The researcher, therefore, decides to test the hypotheses H0: μ = 40, Ha: μ < 40. To do so, the researcher has 10,000 office workers complete the maze with classical music playing.  The mean time for these workers is   = 39.8 seconds and the P-value is less than 0.0001. Suppose that two office workers decide to see if they get the same results as the researcher.  They both take the maze while listening to classical music.  The mean of their times is   = 39.8 seconds, the same as that of the researcher.  It is appropriate to conclude which of the following? 
+A) They have reproduced the results of the researcher and their P-value will be the same as that of the researcher. 
+B) They have reproduced the results of the researcher, but their P-value will be slightly smaller than that of the researcher. 
+C) They will reach the same statistical conclusion as the researcher, but their P-value will be a bit different than that of the researcher. 
+*D) None of these
+
+--- #q20
+
+A certain population follows a normal distribution with mean μ and standard deviation σ = 2.5.  You collect data and test the hypotheses H0: μ = 1, Ha: μ ≠ 1. You obtain a P-value of 0.022.  Which of the following is true? 
+A) A 95% confidence interval for μ will include the value 1. 
+B) A 95% confidence interval for μ will include the value 0. 
+*C) A 99% confidence interval for μ will include the value 1. 
+D) A 99% confidence interval for μ will include the value 0. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
