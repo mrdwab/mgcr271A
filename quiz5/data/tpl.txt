@@ -1,0 +1,18 @@
+---
+title: Quiz 5 Solutions
+subtitle: MGCR 271
+author: Ramnath Vaidyanathan
+widgets: [mathjax, quiz, bootstrap]
+mode  : selfcontained
+{{# questions }}
+--- .quiz &radio
+
+## Question
+
+{{{ Q }}}
+
+{{# A }}
+{{{num}}}. {{{ ans }}}
+{{/ A }}
+
+{{/ questions }}

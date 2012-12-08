@@ -1,0 +1,620 @@
+---
+title: Business Statistics
+subtitle: Quiz 5 Solutions
+author: Ramnath Vaidyanathan
+job: Assistant Professor, McGill 
+logo: mcgill_logo_small.png
+license: by-nc-sa
+framework: io2012
+highlighter: highlight.js
+hitheme: hemisu-light
+widgets: [mathjax, quiz, bootstrap]
+mode   : selfcontained
+url:
+  assets: ../assets
+--- .quiz &radio .small
+
+## Question 1
+
+<style>
+.small p, 
+.small li {
+  font-size: 0.8em;
+}
+</style>
+
+A statistician working for the National Basketball Association supplies the television announcers with interesting statistics.  At a certain point in the season, he discovered that of the 375 games where a team was winning the game at the end of the third quarter, 300 of those games were won by the team that was already winning.The margin of error for a 90% confidence interval is
+
+
+
+
+
+1. 0.040.
+2. _0.340._
+3. 0.020.
+4. 0.026.
+
+*** .explanation
+
+The proportion of games won by the team leading is $\hat{p} = \frac{300}{375}$, which simplifies to 0.8. The margin of error for a 90% confidence interval is given by $z^{*} \times \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$, which gives us 0.034
+ 
+
+--- .quiz &radio .small
+
+## Question 2
+
+
+
+
+A newspaper conducted a statewide survey concerning the 2000 race for governor.  The newspaper took a random sample (assume it is an SRS) of 1200 registered voters and found that 640 would vote for the Democratic candidate.  Is this evidence that a clear majority of the population would vote for the Democratic candidate?  To answer this, test the hypotheses H0: p = 0.50, Ha: p > 0.50. The P-value of your test is 
+
+
+1. 0.4920.
+2. 0.0330.
+3. _0.0104._
+4. less than 0.0002.
+
+*** .explanation
+
+The proportion of population voting for the Democratic candidate is given by $\hat{p} = 0.5333$. We can compute the z-score using $z = \frac{\hat{p}-p_{0}}{\sqrt{\frac{p_{0}(1-p_{0})}{n}}}$. Plugging in the values, we get $z = 2.3094$. Using the normal distribution table, we can find the p-value as $p = 0.0105$.
+
+--- .quiz &radio .small
+
+## Question 3
+
+
+
+
+Are people moving away from having a traditional land line telephone in their homes?  A random sample of 153 people was asked “Do you have a traditional telephone in your place of residence?”  Of those asked, 95 said they do have a traditional telephone. The 99% confidence interval estimate is
+
+
+1. (0.544, 0.698).
+2. _(0.520, 0.722)._
+3. (0.617, 0.625).
+4. (0.278, 0.480).
+
+*** .explanation
+
+We have $\hat{p} = 0.6209$, and margin of error given by $z^{*} \times \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$, where $z^{*} = 2.5758$. This gives us $m = 0.101$. Plugging values, we get $CI = ( 0.52,0.722 )$.
+
+
+--- .quiz &radio .small
+
+## Question 4
+
+
+
+
+
+Are people moving away from having a traditional land line telephone in their homes?  A random sample of 153 people was asked “Do you have a traditional telephone in your place of residence?”  Of those asked, 95 said they do have a traditional telephone. How large a sample n would you need to estimate p with margin of error 0.03 with 99% confidence?  Use the approximation that p = 0.5 as the value for p in your calculation. 
+
+
+1. n = 33
+2. n = 153
+3. n = 1068
+4. _n = 1844_
+
+*** .explanation
+
+We know that the margin of error is given by $m =z^{*}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$. Hence, we get $n = \left(\frac{z^{*}}{m}\right)^{2}\hat{p}(1-\hat{p})$. Substituting the appropriate values, we get $n = \left(\frac{2.5758}{0.03}\right)^{2}0.5(1-0.5)$, which on simplification yields $n = 1844$
+ 
+
+--- 
+
+## Question 5
+
+A recent book noted that only 22% of investment managers outperform the standard indexes, such as the Dow Jones Industrial Average or the NASDAQ, over a five-year period.A sample of 400 investment managers that had graduated from one of the top ten business programs in the country were followed over a five-year period.  One hundred ten of these outperformed the Dow Jones Industrial Average.  Let p represent the probability that a random investment manager who graduated from one of the top ten business programs will outperform the Dow Jones over a five-year period. 
+
+--- .quiz &radio .small
+
+## Question 5A
+
+
+
+
+
+Based on the results of the sample, a 95% confidence interval for p is
+
+
+1. _(0.231, 0.319)._
+2. (0.217, 0.333).
+3. (0.238, 0.312).
+4. We can assert that p = 0.22 with 100% confidence because only 22% of investment managers outperform the standard indexes.
+
+*** .explanation
+
+We have $\hat{p} = 0.275$, and margin of error given by $z^{*} \times \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$, where $z^{*} = 1.96$. This gives us $m = 0.0438$. Plugging values, we get $CI = ( 0.231,0.319 )$.
+
+--- .quiz &radio .small
+
+## Question 5B
+
+
+
+
+Suppose you wished to see if there is evidence that graduates of one of the top business programs perform better than other investment managers. To do this, you test the hypotheses H0: p = 0.22, Ha: p > 0.22. The P-value of your test is
+
+
+1. 0.0080.
+2. _0.0040._
+3. 0.0045.
+4. 0.0090.
+
+*** .explanation
+
+We can compute the test statistic as $z=\frac{\hat{p}-p_{0}}{\sqrt{\frac{p_{0}(1-p_{0})}{n}}}$. Plugging in values, we get $z = 2.6554$. Using the normal distribution table, we can find $p = 0.004$
+
+
+--- .quiz &radio
+
+## Question 5C
+
+Suppose you wished to see if there is evidence that graduates of one of the top business programs perform better than other investment managers. To do this, you test the hypotheses H0: p = 0.22, Ha: p > 0.22. The decision made for this hypothesis test would be to
+
+
+1. _reject H0 in favor of Ha._
+2. not reject H0 in favor of Ha.
+3. reject Ha in favor of H0.
+4. question your results because of the sample size of 400.
+
+*** .explanation
+
+In 5B, we computed the p-value to be 0.004. Assuming a signficance level of 1%, we would reject the null in favor of the alternate, since the p-value is smaller than the significance level.
+
+--- .quiz &radio .small
+
+## Question 6A
+
+
+
+
+
+After the football team once again lost a game to the college’s arch rival, the alumni association conducted a survey to see if alumni were in favor of firing the coach.An SRS of 100 alumni from the population of all living alumni was taken.  Sixty-four of the alumni in the sample were in favor of firing the coach.  Let p represent the proportion of all living alumni who favor firing the coach. A 95% confidence interval for p is
+
+
+1. (0.583, 0.677).
+2. (0.552, 0.708).
+3. _(0.546, 0.734)._
+4. (0.502, 0.758).
+
+*** .explanation
+
+We have $\hat{p} = 0.64$, and margin of error given by $z^{*} \times \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$, where $z^{*} = 1.96$. This gives us $m = 0.0941$. Plugging values, we get $CI = ( 0.546,0.734 )$.
+
+--- .quiz &radio .small
+
+## Question 6B
+
+
+
+
+
+After the football team once again lost a game to the college’s arch rival, the alumni association conducted a survey to see if alumni were in favor of firing the coach. An SRS of 100 alumni from the population of all living alumni was taken.  Sixty-four of the alumni in the sample were in favor of firing the coach.  Let p represent the proportion of all living alumni who favor firing the coach. Suppose you wished to see if the majority of alumni are in favor of firing the coach.  To do this you test the hypotheses H0: p = 0.50, Ha: p > 0.50. The P-value of your test is
+
+
+1. between 0.10 and .05.
+2. between .05 and .01.
+3. _between .01 and .001._
+4. below .001.
+
+*** .explanation
+
+We can compute the test statistic as $z=\frac{\hat{p}-p_{0}}{\sqrt{\frac{p_{0}(1-p_{0})}{n}}}$. Plugging in values, we get $z = 2.8$. Using the normal distribution table, we can find $p = 0.0026$
+
+--- .quiz &radio .small
+
+## Question 7
+
+An inspector inspects large truckloads of potatoes to determine the proportion p in the shipment with major defects prior to using the potatoes to make potato chips.  Unless there is clear evidence that this proportion is less than 0.10, she will reject the shipment.  To reach a decision, she will test the hypotheses H0: p = 0.10, Ha: p < 0.10 using the large sample test for a population proportion.  To do so, she selects an SRS of 150 potatoes from the over 3000 potatoes on the truck.  Suppose that only six of the potatoes sampled are found to have major defects. Which of the following assumptions for inference about a proportion, using a hypothesis test, are violated? 
+
+
+1. The data are an SRS from the population of interest.
+2. The population is at least 10 times as large as the sample.
+3. n is so large that both np0 and n(1 – p0) are 10 or more, where p0 is the proportion with major defects, if the null hypothesis is true.
+4. _There appear to be no violations._
+
+*** .explanation
+
+All assumptions for the hypothesis test, namely the first three choices are met. So there appear to be no violations.
+
+--- .quiz &radio .small
+
+## Question 8A
+
+
+
+
+A researcher is studying the failure rate of restaurants.  She selects a random sample of 200 restaurants in large cities that opened within the last year.  Following up on these restaurants, she finds that 80 had failed within five years. A 99% confidence interval for the proportion of restaurants that fail within five years is 
+
+
+1. 0.402 ± 0.035.
+2. 0.402± 0.044.
+3. 0.402 ± 0.057.
+4. _0.402 ± 0.089._
+
+*** .explanation
+
+We have $\hat{p} = 0.4$, and margin of error given by $z^{*} \times \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$, where $z^{*} = 2.5758$. This gives us $m = 0.0892$.
+
+--- .quiz &radio .small
+
+## Question 8B
+
+A researcher is studying the failure rate of restaurants.  She selects a random sample of 200 restaurants in large cities that opened within the last year.  Following up on these restaurants, she finds that 80 had failed within five years. To determine if opening a restaurant in a large city increases the chance of failure compared to opening a restaurant in a suburban or rural area we should
+
+
+1. test the hypotheses H0: p = 0.50, Ha: p ≠ 0.50.
+2. test the hypotheses H0: p = 0.50, Ha: p $\gt$ 0.50
+3. test the hypotheses H0: p = 0.40, Ha: p $\gt$ 0.40.
+4. _do none of these._
+
+
+*** .explanation
+
+In order to answer the question, we need to compare the proportion of restaurants that fail in large cities to that of restaurants failing in suburban or rural areas. None of the hypotheses listed in the answers do such a comparison.
+
+
+--- .quiz &radio .small
+
+## Question 9A
+
+
+
+
+
+An SRS of size 100 is taken from a population having proportion 0.8 of successes.  An independent SRS of size 400 is taken from a population having proportion 0.5 of successes. The sampling distribution for the difference in the sample proportions has mean 
+
+
+1. _0.3._
+2. the smaller of 0.8 and 0.5.
+3. 0.15.
+4. that cannot be determined without knowing the sample results.
+
+*** .explanation
+
+The mean of the sampling distribution for difference in the sample proportions is given by 0.8 - 0.5 which equals 0.3.
+
+--- .quiz &radio .small
+
+## Question 9B
+
+An SRS of size 100 is taken from a population having proportion 0.8 of successes.  An independent SRS of size 400 is taken from a population having proportion 0.5 of successes. The sampling distribution for the difference in the sample proportions, has standard deviation σD equal to
+
+
+1. 1.3.
+2. 0.40.
+3. _0.047._
+4. 0.002.
+
+*** .explanation
+
+The standard error of the sampling distribution can be computed as $\sqrt{\frac{\hat{p}_{1}(1-\hat{p}_{1})}{n_{1}}+\frac{\hat{p}_{2}(1-\hat{p}_{2})}{n_{2}}}$. Plugging the correct values, we get $se = 0.0472$
+ 
+
+--- .quiz &radio .small
+
+## Question 10A
+
+
+
+
+In a large midwestern university (the class of entering freshmen being on the order of 6000 or more students), an SRS of 100 entering freshmen in 1993 found that 20 finished in the bottom third of their high school class.  Admission standards at the university were tightened in 1995.  In 1997 an SRS of 100 entering freshmen found that 10 finished in the bottom third of their high school class.  Let p1 and p2 be the proportion of all entering freshmen in 1993 and 1997, respectively, who graduated in the bottom third of their high school class. A 90% confidence interval for p1 – p2 is
+
+
+1. 0.098 ± .050.
+2. _0.098 ± .083._
+3. 0.098 ± .099.
+4. 0.098 ± .130.
+
+*** .explanation
+
+The standard error of the sampling distribution can be computed as $\sqrt{\frac{\hat{p}_{1}(1-\hat{p}_{1})}{n_{1}}+\frac{\hat{p}_{2}(1-\hat{p}_{2})}{n_{2}}}$. Plugging the correct values, we get $se = 0.05$. Hence the margin of error for a 90% confidence interval equals $m = z^{*} \times se$, which gives us $m = 1.6449 \times 0.05$, which equals 0.0822.
+
+--- .quiz &radio .small
+
+## Question 10B
+
+
+
+
+In a large midwestern university (the class of entering freshmen being on the order of 6000 or more students), an SRS of 100 entering freshmen in 1993 found that 20 finished in the bottom third of their high school class.  Admission standards at the university were tightened in 1995.  In 1997 an SRS of 100 entering freshmen found that 10 finished in the bottom third of their high school class.  Let p1 and p2 be the proportion of all entering freshmen in 1993 and 1997, respectively, who graduated in the bottom third of their high school class. Is there evidence that the proportion of freshmen who graduated in the bottom third of their high school class in 1997 has been reduced, as a result of the tougher admission standards adopted in 1995, compared to the proportion in 1993?  To determine this, you test the hypotheses H0: p1 = p2, Ha: p1 > p2. The P-value of your test is
+
+
+1. between .10 and .05.
+2. _between .05 and .01._
+3. between .01 and .001.
+4. below .001.
+
+*** .explanation
+
+We do a pooled test here and hence the standard error is given by  $\sqrt{\frac{\hat{p}(1-\hat{p})}{n_{1}}+\frac{\hat{p}(1-\hat{p})}{n_{2}}}$, where $\hat{p} = (20 + 10)/(100 + 100)$. Plugging the correct values, we get $se = 0.0505$ and hence $z = 1.9803$. Using the normal distribution table, we can find $p = 0.0238$ .
+
+--- .quiz &radio .small
+
+## Question 11A
+
+An SRS of 100 flights of a large airline (call this airline 1) showed that 64 were on time.  An SRS of 100 flights of another large airline (call this airline 2) showed that 80 were on time.  Let p1 and p2 be the proportion of all flights that are on time for these two airlines. A 90% confidence interval for the difference p1 – p2 is: 
+
+
+1. –0.157 ± 0.062.
+2. –0.157 ± 0.122.
+3. _–0.157 ± 0.102._
+4. 0.157 ± 0.062.
+
+--- .quiz &radio .small
+
+## Question 11B
+
+An SRS of 100 flights of a large airline (call this airline 1) showed that 64 were on time.  An SRS of 100 flights of another large airline (call this airline 2) showed that 80 were on time.  Let p1 and p2 be the proportion of all flights that are on time for these two airlines. Is there evidence of a difference in the on-time rate for the two airlines?  To determine this, you test the hypotheses H0: p1 = p2, Ha: p1 ≠ p2. The P-value of your test of the hypotheses given is: 
+
+
+1. between .10 and .05.
+2. _between .05 and .01._
+3. between .01 and .001.
+4. below .001.
+
+--- 
+
+## Question 12
+
+Are avid readers more likely to wear glasses than those who read less frequently?  Three hundred men in the Korean Army were selected at random and characterized as to whether they wore glasses and whether the amount of reading they did was above average, average, or below average.  The results are presented in the following table.
+
+ Amount of Reading |Yes|  No
+ ------------------|---|-----
+ Above Average     |47 |  26
+ Average           |48 |  80
+ Below Average     |31 |  70
+
+--- .quiz &radio .small
+
+## Question 12A
+
+This is an r × c table.  The number r has value: 
+
+1. 2
+2. _3._
+3. 4
+4. 6
+
+*** .explanation
+
+There are 3 rows, one for each amount of reading.
+
+--- .quiz &radio .small
+
+## Question 12B
+
+The proportion of men in the table who wore glasses is: 
+
+
+1. 0.24.
+2. 0.37.
+3. _0.42._
+4. 0.64.
+
+*** .explanation
+
+The number of men wearing glasses is 47 + 48 + 31. Hence, the proportion of men wearing glasses is given by 0.42
+
+--- .quiz &radio
+
+## Question 12C
+
+The proportion of all above-average readers who wear glasses is: 
+
+
+1. 0.24.
+2. 0.37.
+3. 0.42.
+4. _0.64._
+
+*** .explanation
+
+The number of above-average readers is given by 73 of which 47 wore glasses. Hence the proportion of above-average readers wearing glasses is given by 0.6438
+
+--- .quiz &radio .small
+
+## Question 12D
+
+Suppose we wish to test the null hypothesis that there is no association between the amount of reading you do and whether you wear glasses.  Under the null hypothesis, the expected number of above average readers who wear glasses is:
+
+
+1. 81.1.
+2. 47
+3. _30.7._
+4. 27.2.
+
+*** .explanation
+
+The total number of above average readers is 73 and the total number wearing glasses is 126. Hence the expected count is given by $(73 \times 126)/300$, which gives us 30.66 
+
+--- .quiz &radio
+
+## Question 12E
+
+Suppose we wish to display in a graphic the proportion of all above average readers that wear glasses and do not wear glasses, respectively.  Which of the following graphical displays is best suited to this purpose? 
+
+
+1. stemplot
+2. A scatterplot
+3. A boxplot
+4. _A bar graph_
+
+*** .explanation
+
+A bar graph is the best to use while displaying information about a categorical variable. 
+
+--- .small
+
+## Question 13
+
+Are the inflation rates of the United States and the United Kingdom associated? If so, can we  attempt to predict the U.S. Inflation Rate using the UK Inflation Rate?  Suppose we fit the   following simple linear regression model: U.S. Inflation Ratei = β0 + β1(UK Inflation Rate)i + εi, where the deviations εi were assumed to be independent and normally distributed, with mean 0 and standard deviation σ.  This model was fit to the data using the method of least squares.  A random sample of 20 annual rates was selected from the past 110 years’ rates. The following results were obtained from statistical software.
+
+```
+R2 = 0.533
+s = 3.88795
+
+Variable            Parameter Est. Std. Err. of Parameter Est. 
+Constant            0.20301        0.087
+UK Inflation Rate   0.6652         0.1468 
+```
+
+--- .quiz &radio
+
+## Question 13A
+
+The intercept of the least-squares regression line is (approximately): 
+
+
+1. _0.203._
+2. 1.087.
+3. 0.665.
+4. 3.888.
+
+*** .explanation
+
+The intercept is the parameter estimate for the constant in the regression output.
+
+--- .quiz &radio
+
+## Question 13B
+
+
+
+
+A 90% confidence interval for the slope β1 in the simple linear regression model is (approximately): 
+
+1. _(0.4106, 0.9198)._
+2. (0.3568, 0.9736).
+3. (0.3590, 0.9714).
+4. (0.4120, 0.9184).
+
+*** .explanation
+
+A 90% confidence interval can be calculated as $0.6652 \pm t^{*} \times 0.1468$. The degrees of freedom for $t^{*}$ is given by $N - C$ which equals 20 - 2 = 18. Hence, $t^{*} = 1.7341$. Plugging in, we get ( 0.4106, 0.9198 )
+
+--- .quiz &radio
+
+## Question 13C
+
+Is there strong evidence (and if so, why) that the relationship between the UK inflation rate and the U.S. inflation rate is adequately described by a straight line? 
+
+
+1. Yes, because the slope of the least-squares line is positive.
+2. _Yes, because the P-value for testing if the slope is 0 is quite small._
+3. No, because the value of the square of the correlation is relatively small.
+4. It is impossible to say, because we are not given the actual value of the correlation.
+
+--- .quiz &radio
+
+## Question 13D
+
+Suppose the researchers test the hypotheses: H0: β1 = 0, Ha: β1 ≠ 0. The value of the t statistic for this test is: 
+
+1. 0.19.
+2. 1.38.
+3. 3.89.
+4. _4.53._
+
+*** .explanation
+
+The t statistic is given by $t = 0.6652/0.1468$, which gives us 4.53
+
+--- .quiz &radio
+
+## Question 13E
+
+The correlation between these two variables is: 
+
+
+1. 0.284.
+2. 0.507.
+3. 0.533.
+4. _0.730._
+
+*** .explanation
+
+For a simple linear regression, the correlation is the square root of the coefficient of determination $R^2$, which gives us 0.7301
+
+---
+
+## Question 14
+
+A random sample of 79 companies from the Forbes 500 list (which actually consists of nearly 800 companies) was selected, and the relationship between sales (in hundreds of thousands of dollars) and profits (in hundreds of thousands of dollars) was investigated by regression.  The following simple linear regression model was used
+
+Profitsi = β0 + β1(Sales)i + εi
+
+where the deviations εi were assumed to be independent and normally distributed, with mean 0 and standard deviation σ.  This model was fit to the data using the method of least squares.  The following results were obtained from statistical software:
+
+```
+R2 = 0.662
+s = 466.2
+
+Variable            Parameter Est. Std. Err. of Parameter Est. 
+Constant            –176.644        61.16
+Sales               0.092498         0.0075
+```
+
+
+--- .quiz &radio .small
+
+## Question 14A
+
+The intercept of the least-squares regression line is (approximately): 
+
+
+1. 0.09.
+2. 0.0075.
+3. _–176.64._
+4. 61.16.
+
+*** .explanation
+
+The constant in the regression output corresponds to the intercept.
+
+--- .quiz &radio .small
+
+## Question 14B
+
+
+
+
+A 90% confidence interval for the slope β1 in the simple linear regression model is (approximately): 
+
+
+1. 0.09 ± 0.0075.
+2. _0.09 ± 0.012._
+3. –0.09 ± 0.0075.
+4. –0.09 ± 0.012.
+
+*** .explanation
+
+The margin of error for a 90% confidence interval can be calculated as $t^{*} \times 0.0075$. The degrees of freedom for $t^{*}$ is given by $N - C$ which equals 79 - 2 = 77. Hence, $t^{*} = 1.6649$. Plugging in, we get 0.0125. The center of the confidence interval is the slope of the regression line, which equals $0.09$.
+
+--- .quiz &radio
+
+## Question 14C
+
+Suppose the researchers test the hypotheses: H0: β1 = 0, Ha: β1 > 0. P-value of the test is: 
+
+
+1. greater than 0.10.
+2. between 0.10 and 0.05.
+3. between 0.05 and 0.01.
+4. _less than 0.01._
+
+*** .explanation
+
+The t-statistic is given by $t = 12.3333. Using the t-table we can find that the p-value will be smaller than 0.01.
+
+--- .quiz &radio
+
+## Question 14D
+
+Is there strong evidence (and if so, why) of a straight line relationship between sales and profits? 
+
+
+1. Yes, because the slope of the least-squares line is positive.
+2. _Yes, because the P-value for testing if the slope is 0 is quite small._
+3. No, because the value of the square of the correlation is relatively small.
+4. It is impossible to say because we are not given the actual value of the correlation.
