@@ -232,7 +232,7 @@ The tenant group claims that the apartments are **smaller** than advertised. Hen
 
 --- #q6c .quiz &radio .smaller
 
-## Question 6C
+## Question 7
 
 Is the mean height for all adult American males between the ages of 18 and 21 now over 6 feet?  If the population of all adult American males between the ages of 18 and 21 has mean height of μ feet and standard deviation σ feet, which of the following null and alternative hypotheses would one test to answer this question? 
 
@@ -247,7 +247,7 @@ We wish to test if the average height of american males between 18 and 21 is **o
 
 --- .quiz &radio .smaller
 
-## Question 7A
+## Question 8A
 
 In a test of significance, assuming the null hypothesis is true, the probability that the test statistic will take a value at least as extreme as that actually observed is: 
 
@@ -262,7 +262,7 @@ This is the definition of a p-value.
 
 --- .quiz &radio .smaller
 
-## Question 7B
+## Question 8B
 
 In testing hypotheses, which of the following would be strong evidence against the null hypothesis?
 
@@ -277,7 +277,7 @@ A small p-value indicates that the observed data is very unlikely if the null hy
 
 --- .quiz &radio .smaller
 
-## Question 8A
+## Question 9A
 
 In a statistical test of hypotheses, we say the data are statistically significant at level $\alpha$ if: 
 
@@ -292,7 +292,7 @@ This is the definition of statistical significance.
 
 --- .quiz &radio .smaller
 
-## Question 8B
+## Question 9B
 
 In a test of statistical hypotheses, the P-value tells us: 
 
@@ -307,7 +307,7 @@ Suppose we compute a p-value of 2%. It implies that we would reject the null hyp
 
 --- .quiz &radio .smaller
 
-## Question 9
+## Question 10
 
 ```{r echo = F}
 mu0 = 115; sigma = 25; n = 25; xbar = 116.2
@@ -334,7 +334,7 @@ We can compute the test score as $z = z=\frac{\bar{x}-\mu_{0}}{\sigma/\sqrt{n}}$
 
 --- #q11 .quiz &radio .smaller
 
-## Question 10
+## Question 11
 
 ```{r echo = F}
 mu0 = 10; sigma = 0.4; xbar = 9.8; n = 100
@@ -360,7 +360,7 @@ We can compute the test score as $z = z=\frac{\bar{x}-\mu_{0}}{\sigma/\sqrt{n}}$
 
 --- #q12 .quiz &radio .smaller
 
-## Question 11
+## Question 12
 
 ```{r echo = F}
 xbar = 1.53; sigma = 0.1; mu0 = 1.5; n = 100
@@ -382,7 +382,7 @@ We can compute the test score as $z = z=\frac{\bar{x}-\mu_{0}}{\sigma/\sqrt{n}}$
 
 --- #q13 .quiz &radio .smaller
 
-## Question 12
+## Question 13
 
 ```{r echo = F}
 mu0 = 30; xbar = 31.2; n = 9; sigma = 3;
@@ -407,21 +407,132 @@ We can compute the test score as $z = z=\frac{\bar{x}-\mu_{0}}{\sigma/\sqrt{n}}$
 
 
 
---- #q14
+--- #q14 .quiz &radio .smaller
+
+## Question 14A
 
 During the winter months, heating bills can be expensive.  A contractor claims that installing a new brand of insulation will considerably lower your heating bill (which was $205 last month).  After conducting the test (assuming the data were provided), you find that the results are significant at the 5% level.  You may also conclude: 
-*A) the test would also be significant at the 10% level. 
-B) the test would also be significant at the 1% level. 
-C) all of these
-D) none of these
+
+1. _the test would also be significant at the 10% level._ 
+2. the test would also be significant at the 1% level. 
+3. all of these
+4. none of these
+
+*** .explanation
+
+Since the results are significant at the 5% level, we can conclude that $p < 5%$. Hence $p < 10%$ implying that the test would also be significant at the 10% level.
+
+--- .quiz &radio .smaller
+
+## Question 14B
 
 An agricultural researcher plants 25 plots with a new variety of corn that is drought resistant and hence potentially more profitable.  The average yield for these plots is   = 150 bushels per acre.  Assume that the yield per acre for the new variety of corn follows a normal distribution with unknown mean μ and that a 95% confidence interval for μ is found to be 150 ± 3.29.  Which of the following is true? 
-A) A test of the hypotheses H0: μ = 150, Ha: μ ≠ 150 would be rejected at the 0.05 level. 
-B) A test of the hypotheses H0: μ = 150, Ha: μ > 150 would be rejected at the 0.05 level. 
-*C) A test of the hypotheses H0: μ = 160, Ha: μ ≠ 160 would be rejected at the 0.05 level. 
-D) All the above. 
+
+1. A test of the hypotheses H0: μ = 150, Ha: μ ≠ 150 would be rejected at the 0.05 level. 
+2. A test of the hypotheses H0: μ = 150, Ha: μ $\gt$ 150 would be rejected at the 0.05 level. 
+3. _A test of the hypotheses H0: μ = 160, Ha: μ ≠ 160 would be rejected at the 0.05 level._ 
+4. All the above. 
+
+*** .explanation
+
+The 95% confidence interval for $\mu$ is given to be $150 \pm 3.29$. Since, $\mu = 160$ lies outside of this interval, we can conclude that a test of the hypotheses H0: μ = 160, Ha: μ ≠ 160 would be rejected at the 5% level.
+
+--- .quiz &radio .smaller
+
+## Question 15
+
+A financial advisor is working to create a new investment package for is clients.  The average return on current packages is 1.2%.  In an early experiment, she tries the new investment package with three clients and returns more than doubled to 3%.  Although the rate of return has doubled, the results are not statistically significant even at the 0.10 significance level.  The explanation is: 
+
+1. the placebo effect is present which limits statistical significance. 
+2. _the sample size is too small to determine if the observed increase cannot be reasonably attributed to chance._ 
+3. that although the rate of return has more than doubled, in reality the actual increase is really 1.2%. 
+4. the calculation was in error.  The advisor forgot to include the sample size. 
+
+*** .explanation
+
+N = 3 is a really small sample size. Hence it is too small to determine if the observed increase cannot be attributed to chance.
+
+--- #q16 .quiz &radio .smaller
+
+## Question 16
+
+Ten years ago the mean Math SAT score of all high school students who took the exam in a small high school was 490, with a standard deviation of 80.  This year, a boxplot of the scores of a random sample of 25 students in the high school who took the exam is given on the next page. The mean score of these 25 students is  530.  We assume the population standard deviation continues to be σ = 80.  To determine if there is evidence that the scores in the district have improved, the hypotheses H0: μ = 490, Ha: μ > 490 are tested using the z statistic, and the P-value is found to be 0.0062.
+
+1. at the 5% significance level, you have proved that H0 is false. 
+2. at the 5% significance level, you have proved that Ha is false. 
+3. it would have been more appropriate to use a two-sided alternative. 
+4. _none of the above._
 
 
+*** .explanation
+
+Since the p-value is 0.0062 < 5%, we would reject the null hypothesis. However, it does not imply that we have proved that H0 is FALSE. Hence, none of the conclusions listed in the answers would be valid.
+
+--- #q17 .quiz &radio .smaller
+
+## Question 17
+
+An engineer designs an improved light bulb.  The previous design had an average lifetime of 1200 hours.  The mean lifetime of a random sample of 2000 new bulbs is found to have a mean lifetime of 1201 hours.  Although the difference from the old mean lifetime of 1200 hours is quite small, the P-value is 0.03 and the effect is statistically significant at the 0.05 level.  If, in fact, there is no difference between the mean lifetimes of the new and old designs, the researcher has: 
+
+1. _committed a type I error._
+2. committed a type II error. 
+3. a probability of being correct, which is equal to the P-value. 
+4. a probability of being correct, which is equal to 1 – (P-value). 
+
+*** .explanation
+
+The null hypothesis states that there is no difference between the mean liftimes of the new and old designs. Given the p-value we would be rejecting the null hypothesis. However, if H0 were actually TRUE, then we would be incorrectly rejecting it when it is true, implying a Type I error.
+
+--- #q18 .quiz &radio .smaller
+
+## Question 18
+
+A medical researcher is working on a new treatment for a certain type of cancer.  The average survival time after diagnosis on the standard treatment is two years.  In an early trial, she tries the new treatment on three subjects, who have an average survival time after diagnosis of four years.  Although the survival time has doubled, the results are not statistically significant even at the 0.10 significance level.  Suppose, in fact, that the new treatment does increase the mean survival time in the population of all patients with this particular type of cancer.  The researcher has: 
+
+1. committed a type I error. 
+2. _committed a type II error._ 
+3. incorrectly used a level 0.10 test when she should have used a 0.05 level test. 
+4. incorrectly used a level 0.10 test when she should have computed the P-value.
+
+*** .explanation
+
+This is a case of not rejecting the null, when the alternate is true (new treatment does increase mean survival time), implying a Type II error.
+ 
+--- #q19 .quiz &radio .smaller
+
+## Question 19
+
+A researcher wishes to determine if listening to classical music improves the concentration of office workers.  To investigate this, he decides to see if office workers are able to complete a certain pencil-and-paper maze more quickly while listening to classical music.  Suppose the time (in seconds) needed for office workers to complete the maze while listening to classical music follows a normal distribution with mean μ and standard deviation σ = 4.  Suppose also, that in the general population, the time needed to complete the maze (without listening to classical music) follows a normal distribution with mean 40 and standard deviation σ = 4.  The researcher, therefore, decides to test the hypotheses H0: μ = 40, Ha: μ < 40. To do so, the researcher has 10,000 office workers complete the maze with classical music playing.  The mean time for these workers is   = 39.8 seconds and the P-value is less than 0.0001. Suppose that two office workers decide to see if they get the same results as the researcher.  They both take the maze while listening to classical music.  The mean of their times is   = 39.8 seconds, the same as that of the researcher.  It is appropriate to conclude which of the following? 
+
+1. They have reproduced the results of the researcher and their P-value will be the same as that of the researcher. 
+2. They have reproduced the results of the researcher, but their P-value will be slightly smaller than that of the researcher. 
+3. They will reach the same statistical conclusion as the researcher, but their P-value will be a bit different than that of the researcher. 
+4. _None of these_
+
+--- #q20 .quiz &radio .smaller
+
+## Question 20
+
+```{r echo = F}
+pval = 0.022
+zval = qnorm(pval, lower.tail = F)
+zs1 = qnorm(0.05, lower.tail = F)
+zs2 = qnorm(0.005, lower.tail = F)
+```
+
+
+A certain population follows a normal distribution with mean μ and standard deviation σ = 2.5.  You collect data and test the hypotheses H0: μ = 1, Ha: μ ≠ 1. You obtain a P-value of 0.022.  Which of the following is true? 
+
+1. A 95% confidence interval for μ will include the value 1. 
+2. A 95% confidence interval for μ will include the value 0. 
+3. _A 99% confidence interval for μ will include the value 1._ 
+4. A 99% confidence interval for μ will include the value 0. 
+
+*** .explanation
+
+Based on the p-value, we get that the sample statistic $\bar{x}$ is $z = `r zval`$ standard errors away from 1 (the mean according the the null hypothesis). A 95% confidence interval for $\mu$ would consist of values lying within `r zs1` standard errors from $\bar{x}$. Since 1 lies `r zval` standard errors from $\bar{x}$, it won't lie in the 95% confidence interval. However, a 99% confidence interval for $\mu$ would consist of values lying within `r zs2` standard errors from $\bar{x}$ and since 1 lies `r zval` standard errors from $\bar{x}$, it will lie in the 99% confidence interval. The question of whether ZERO would lie within the 95%/99% intervals will depend on the actual values of $n$. 
+
+Hence, the only conclusion that will always hold is (c).
 
 
 
