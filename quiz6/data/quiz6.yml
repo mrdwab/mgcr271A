@@ -1,0 +1,351 @@
+Q: >
+  Using the regression equation, the predicted average number of home runs per game per team in 1978 would be: 
+A: 
+ - 1.463. 
+ - =1.713. 
+ - 2.431. 
+ - 29.624. 
+
+---
+
+Q: >
+  The value of the regression standard error is: 
+A: >
+ - 0.067. 
+ - =0.259. 
+ - 0.372. 
+ - 1.593. 
+---
+
+Q: >
+  The value of R2 is: 
+A:
+ - 0.067. 
+ - =0.227. 
+ - 0.259. 
+ - 0.744. 
+
+---
+
+Q: >
+  A 90% confidence interval for β1, the coefficient of Year, based on these results is: 
+A:
+ - 0.014977 ± 0.0065. 
+ - =0.014977 ± 0.0110. 
+ - 0.014977 ± 0.0128. 
+ - 0.0065 ± 0.014977. 
+
+---
+
+Q: >
+  You are interested in determining if the change in manufacturer had any effect on the average number of home runs hit per game per team.  To answer this question, you decide to test the hypotheses H0: β2 = 0, Ha: β2 ≠ 0. Using the estimates obtained from our statistical software, the P-value for this test is: 
+A: 
+ - =greater than 0.05. 
+ - between 0.05 and 0.01. 
+ - between 0.01 and 0.005. 
+ - below 0.005. 
+
+---
+
+Q: >
+  The researchers also ran the simple linear regression model μAvg. home runs per game per team = β0 + β1(Year). The sum of squares for error for this model: 
+A:
+ - =will be greater than 2.53933. 
+ - will be less than 2.53933. 
+ - will be unchanged. 
+ - can be greater or less than 2.53933. 
+
+---
+
+Q: >
+  The degrees of freedom in the numerator for this test are:
+A: 
+ - 36.
+ - 33.
+ - =2.
+ - 1.
+
+---
+
+Q: >
+  The degrees of freedom in the denominator of the F test are:
+A:
+ - =33.
+ - 12.
+ - 3.
+ - 2.
+
+---
+
+Q: >
+  The P-value of the ANOVA F test is:
+A:
+ - =larger than 0.10.
+ - between 0.10 and 0.05.
+ - between 0.05 and 0.01.
+ - below 0.01.
+
+---
+
+Q: >
+  In this example, we notice:
+A:
+ - there is clear evidence of bias in the results.  This is undoubtedly due to the lack of blinding on the part of the subjects.
+ - the data show very strong evidence of a violation of the assumption that the three populations have the same standard deviation.
+ - ANOVA cannot be used on these data because the sample sizes are less than 20.
+ - =the assumption that the data are independent for the three days is unreasonable, because the same teams were observed each day.
+
+---
+
+Q: >
+  For this example, which of the following conclusions is most reasonable?
+A:
+ - There is moderate evidence that the strategies taught are effective in increasing the number of tasks completed successfully for the first two days, but then the effect appears to wear off.
+ - An ANOVA F test is not appropriate for these data.  Instead, the researchers should have done several tests to see if the number of tasks completed successfully differed for the three days.  This analysis would have shown the treatment was effective.
+ - The data provide strong evidence that the mean number of tasks completed successfully differ for the three strategies taught.
+ - =The data appear to provide little or no evidence that the strategies taught differ in their effectiveness in helping teams complete tasks successfully.
+
+---
+
+Q: >
+  Suppose we want a 93% confidence interval for the average amount spent on books by freshmen in their first year at a major university.  The interval is to have a margin of error of $2, and the amount spent has a normal distribution with a standard deviation σ = $30.  The number of observations required is closest to: 
+A:
+ - 28. 
+ - 30. 
+ - =739. 
+ - 865. 
+
+---
+
+Q: >
+  Other things being equal, the margin of error of a confidence interval increases as: 
+A:
+ - the sample size increases. 
+ - the confidence level decreases. 
+ - =the population standard deviation increases. 
+ - none of these
+
+---
+
+Q: > 
+ The Survey of Study Habits and Attitudes (SSHA) is a psychological test that measures the motivation, attitude, and study habits of college students.  Scores range  from 0 to 200 and follow (approximately) a normal distribution with mean 115 and standard deviation σ = 25.  You suspect that incoming freshmen have a mean μ, which is different from 115, because they are often excited and anxious about entering college.  To test your suspicion, you test the hypotheses H0: μ = 115, Ha: μ ≠ 115. You give the SSHA to 25 students who are incoming freshmen and find their mean score is 116.2.  The P-value of your test is: 
+A:
+ - 0.1151. 
+ - 0.2302. 
+ - 0.4052. 
+ - =0.8104. 
+
+---
+
+Q: >
+ During the winter months, heating bills can be expensive.  A contractor claims that installing a new brand of insulation will considerably lower your heating bill (which was $205 last month).  After conducting the test (assuming the data were provided), you find that the results are significant at the 5% level.  You may also conclude: 
+A:
+ - =the test would also be significant at the 10% level. 
+ - the test would also be significant at the 1% level. 
+ - the test would be significant at both 1% and 10% levels
+ - none of these
+
+
+---
+
+Q: >
+ Which of the following will increase the value of the power in a statistical test of hypotheses? 
+A:
+ - Increase the significance level α. 
+ - Increase the sample size. 
+ - Consider computing the power for a value of the alternative that is farther from the value of the parameter of interest under the null hypothesis.
+ - =All of these
+
+---
+
+Q: >
+  The nicotine content in cigarettes of a certain brand is normally distributed, with mean (in milligrams) μ and standard deviation σ = 0.1.  The brand advertises that the mean nicotine content of its cigarettes is 1.5, but you are suspicious and plan to investigate the advertised claim by testing the hypotheses H0: μ = 1.5, Ha: μ > 1.5 at the 5% significance level.  You will do so by measuring the nicotine content of 100 randomly selected cigarettes of this brand and computing the mean nicotine content of your measurements.  The power of your test at μ = 1.6 is: 
+A:
+ - 0.7995. 
+ - 0.8413. 
+ - 0.95. 
+ - =greater than 0.999. 
+
+---
+
+
+Q: >
+  A 99% confidence interval for μ1 – μ2 is (use the conservative value for the degrees of freedom): 
+A:
+ - (−0.7, 8.7). 
+ - (−2.2, 10.2). 
+ - (−3.7, 11.7). 
+ - =(−7.2, 15.2). 
+
+---
+
+Q: >
+  Suppose the researcher had wished to test the hypotheses H0: μ1 = μ2, Ha: μ1 > μ2. The numerical value of the two-sample t statistic is: 
+A: 
+ - =0.36. 
+ - 1.20. 
+ - 2.57. 
+ - 4.00. 
+
+---
+
+Q: >
+  Suppose the researcher had wished to test the hypotheses H0: μ1 = μ2, Ha: μ1 > μ2. The P-value for the test is (use the conservative value for the degrees of freedom): 
+A:
+ - =larger than 0.10. 
+ - between 0.10 and 0.05. 
+ - between 0.05 and 0.01. 
+ - below 0.01. 
+
+---
+
+Q: >
+  To which of the following would it have been most important that the subjects be blind during the experiment? 
+A:
+ - The identity of the sports writer 
+ - The direction in which they were to kick the ball 
+ - The method they were to use in kicking the ball 
+ - =Whether the ball they were kicking was filled with helium or air 
+
+
+---
+
+Q: >
+  A newspaper conducted a statewide survey concerning the 2000 race for governor.  The newspaper took a random sample (assume it is an SRS) of 1200 registered voters and found that 640 would vote for the Democratic candidate.  Is this evidence that a clear majority of the population would vote for the Democratic candidate?  To answer this, test the hypotheses H0: p = 0.50, Ha: p > 0.50. The P-value of your test is: 
+A:
+ - 0.4920. 
+ - 0.0330. 
+ - =0.0104. 
+ - less than 0.0002. 
+
+---
+
+Q: >
+  A researcher is studying the failure rate of restaurants.  She selects a random sample of 200 restaurants in large cities that opened within the last year.  Following up on these restaurants, she finds that 80 had failed within five years. A 99% confidence interval for the proportion of restaurants that fail within five years is: 
+A:
+ - 0.402 ± 0.035. 
+ - 0.402± 0.044. 
+ - 0.402 ± 0.057. 
+ - =0.402 ± 0.089. 
+
+---
+
+Q: > 
+ An inspector inspects large truckloads of potatoes to determine the proportion p in the shipment with major defects prior to using the potatoes to make potato chips. 
+ Unless there is clear evidence that this proportion is less than 0.10, she will reject the shipment.  To reach a decision, she will test the hypotheses H0: p = 0.10, Ha: p < 0.10 using the large sample test for a population proportion.  To do so, she selects an SRS of 150 potatoes from the over 3000 potatoes on the truck.  Suppose that only six of the potatoes sampled are found to have major defects. The P-value of her test is: 
+A:
+ - less than 0.0002. 
+ - 0.0010.
+ - =0.0071. 
+ - 0.0142. 
+
+---
+
+Q: >
+ In a large midwestern university (the class of entering freshmen being on the order of 6000 or more students), an SRS of 100 entering freshmen in 1993 found that 20 finished in the bottom third of their high school class.  Admission standards at the university were tightened in 1995.  In 1997 an SRS of 100 entering freshmen found that 10 finished in the bottom third of their high school class.  Let p1 and p2 be the proportion of all entering freshmen in 1993 and 1997, respectively, who graduated in the bottom third of their high school class. A 90% confidence interval for p1 – p2 is: 
+A:
+ - 0.098 ± .050. 
+ - =0.098 ± .083. 
+ - 0.098 ± .099. 
+ - 0.098 ± .130. 
+
+---
+
+Q: >
+  An SRS of 25 male faculty members at a large university found that 10 felt that the university was supportive of female and minority faculty. An independent SRS of 20 female faculty found that five felt that the university was supportive of female and minority faculty.  Let p1 and p2 represent the proportion of all male and female faculty, respectively, at the university who felt that the university was supportive of female and minority faculty at the time of the survey.The margin of error for a 95% confidence interval for p1 – p2 is:
+A:
+ - 0.345. 
+ - =0.262. 
+ - 0.220. 
+ - 0.134.
+
+---
+
+Q: >
+ This is an r × c table.  The number c has value
+A: 
+ - 2. 
+ - =3. 
+ - 4. 
+ - 5. 
+
+---
+
+Q: >
+ The proportion of all people that considered themselves Independent is
+A:
+ - 0.21. 
+ - =0.18. 
+ - 0.40. 
+ - 0.14. 
+
+---
+
+Q: >
+ The proportion of Democrats who believe that Health Care is the primary concern facing the United States is:
+A:
+ - =0.29. 
+ - 0.12. 
+ - 0.34. 
+ - 0.19. 
+
+---
+
+Q: >
+  Suppose we wish to test the null hypothesis that there is no association between a person’s political affiliation and their primary concern about the United States.  Under the null hypothesis, the expected number (rounded to the nearest whole number) of Republicans that believe war is the primary concern for the United States is:
+A:
+ - =63. 
+ - 95. 
+ - 67. 
+ - 283. 
+
+---
+
+Q: >
+  Suppose we wish to test the null hypothesis that there is no association between a person’s political affiliation and their primary concern about the United States.  Which of the following statements is true?
+A:
+ - We cannot test this hypothesis because the people who conducted the survey did not record the expected counts. 
+ - =The test of the null hypothesis will have a very small P-value (below .0001). 
+ - We cannot test this hypothesis because the expected cell counts are less than 5 in too many of the cells. 
+ - The test of the null hypothesis will have a very large P-value (below .0001). 
+
+---
+
+Q: >
+  The power of a statistical test of hypotheses is: 
+A: 
+ - the smallest significance level at which the data will allow you to reject the null hypothesis. 
+ - equal to 1 – (P-value). 
+ - the extent to which the test will reject both one-sided and two-sided hypotheses. 
+ - =defined for a particular value of the parameter of interest under the alternative hypothesis and is the probability that a fixed level significance test will reject the null hypothesis when this particular alternative value of the parameter is true. 
+
+---
+
+Q: >
+  Which of the following will increase the value of the power in a statistical test of hypotheses? 
+A:
+ - Increase the significance level α. 
+ - Increase the sample size. 
+ - Consider computing the power for a value of the alternative that is farther from the value of the parameter of interest under the null hypothesis.
+ - =All of these
+
+---
+
+Q: >
+  In multiple regression analysis, if the model provides good fit, this indicates that:
+A:
+ - the sum of squares for error will be small. 
+ - the value of the regression standard error will be small. 
+ - the squared multiple regression correlation value is will be close to 1 or −1. 
+ - =all of the above choices are correct.
+
+
+
+
+
+
+
+
+
+
+
