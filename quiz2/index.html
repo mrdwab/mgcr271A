@@ -1595,14 +1595,20 @@ Height (inches)   35  38  41  43  45
 </script>
 <script src='../libraries/widgets/quiz/js/jquery.quiz.js'></script>
 <script src='../libraries/widgets/quiz/js/mustache.min.js'></script>
+
 <script type="text/javascript">
- $('.quiz').find('li:has(em)').addClass('quiz-answer')
- $('li.quiz-answer em').replaceWith(function(){
-   return $(this).contents()
- })
- $('.quiz').find('li').addClass('quiz-option')
- $.quiz();
+
+$('.quiz').find('li').each(function() {
+  $(this).addClass('quiz-option');
+  $(this).has('em').addClass('quiz-answer');
+  return $(this).find('em').replaceWith(function() {
+    return $(this).contents();
+  });
+});
+
+$.quiz();
 </script>
+
 <script src='../libraries/widgets/bootstrap/js/bootstrap.min.js'></script>
 <script>  
 $(function (){ 

@@ -10,6 +10,12 @@ mode    : selfcontained
 url:
   lib: ../quiz5/libraries
   assets: ../assets
+--- new:old
+
+## Testing Deck MetaData
+
+This is {{deck.title}}
+
 --- #q1a .quiz &radio .smaller
 
 ## Question 1A

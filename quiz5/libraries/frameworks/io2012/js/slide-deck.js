@@ -64,6 +64,7 @@ SlideDeck.prototype.loadSlide = function(slideNo) {
  */
 SlideDeck.prototype.onDomLoaded_ = function(e) {
   document.body.classList.add('loaded'); // Add loaded class for templates to use.
+  // handleDomLoadedExtra(); //inserted to work with popcorn.js
 
   this.slides = this.container.querySelectorAll('slide:not([hidden]):not(.backdrop)');
 
@@ -203,6 +204,14 @@ SlideDeck.prototype.onBodyKeyDown_ = function(e) {
       this.prevSlide();
       e.preventDefault();
       break;
+      
+    // inserted to work with popcorn.js 
+    case 71: // G: Go to slide
+      var slideNumber = prompt('Go to slide: ');
+      if (slideNumber != null) {
+        this.gotoSlide(parseInt(slideNumber) - 1);
+      }
+    break;
 
     case 72: // H: Toggle code highlighting
       document.body.classList.toggle('highlight-code');
@@ -520,6 +529,20 @@ SlideDeck.prototype.triggerSlideEvent = function(type, slideNo) {
   evt.slide = el;
 
   el.dispatchEvent(evt);
+};
+
+
+// inserted to work with popcorn.js 
+SlideDeck.prototype.gotoSlide = function(curSlide) {
+  if (curSlide < 0) {
+    curSlide = 0;
+  }
+  if (curSlide >= this.slides.length) {
+    curSlide = this.slides.length - 1;
+  }
+  this.curSlide_ = curSlide;
+  this.prevSlide_ = curSlide - 1;
+  this.updateSlides_();
 };
 
 /**

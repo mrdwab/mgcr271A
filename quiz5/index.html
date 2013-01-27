@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
-  <link rel="stylesheet" href="libraries/frameworks/io2012/phone.css" 
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/hemisu-light.css" />
@@ -36,34 +36,30 @@
   <slides class="layout-widescreen">
     
     <!-- LOGO SLIDE -->
-    <!-- END LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="../assets/img/mcgill_logo_small.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Business Statistics</h1>
+    <h2>Quiz 5 Solutions</h2>
+    <p>Ramnath Vaidyanathan<br/>Assistant Professor, McGill</p>
+  </hgroup>
+    
+  <footer class = 'license'>
+    <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+    </a>
+  </footer>
+</slide>
     
 
-    <!-- TITLE SLIDE -->
-    <!-- Should I move this to a Local Layout File? -->
-    <slide class="title-slide segue nobackground">
-      <aside class="gdbar">
-        <img src="../assets/img/mcgill_logo_small.png">
-      </aside>
-      <hgroup class="auto-fadein">
-        <h1>Business Statistics</h1>
-        <h2>Quiz 5 Solutions</h2>
-        <p>Ramnath Vaidyanathan<br/>Assistant Professor, McGill</p>
-      </hgroup>
-      
-      <footer class = 'license'>
-        <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
-        <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
-        </a>
-      </footer>
-    </slide>
-
     <!-- SLIDES -->
-      <slide class="quiz small" id="slide-1" style="background:;">
+    <slide class="quiz small" id="slide-1" style="background:;">
   <hgroup>
     <h2>Question 1</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <style>
@@ -84,9 +80,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The proportion of games won by the team leading is \(\hat{p} = \frac{300}{375}\), which simplifies to 0.8. The margin of error for a 90% confidence interval is given by \(z^{*} \times \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\), which gives us 0.034</p>
@@ -97,11 +93,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-2" style="background:;">
+<slide class="quiz small" id="slide-2" style="background:;">
   <hgroup>
     <h2>Question 2</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>A newspaper conducted a statewide survey concerning the 2000 race for governor.  The newspaper took a random sample (assume it is an SRS) of 1200 registered voters and found that 640 would vote for the Democratic candidate.  Is this evidence that a clear majority of the population would vote for the Democratic candidate?  To answer this, test the hypotheses H0: p = 0.50, Ha: p &gt; 0.50. The P-value of your test is </p>
@@ -115,9 +111,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The proportion of population voting for the Democratic candidate is given by \(\hat{p} = 0.5333\). We can compute the z-score using \(z = \frac{\hat{p}-p_{0}}{\sqrt{\frac{p_{0}(1-p_{0})}{n}}}\). Plugging in the values, we get \(z = 2.3094\). Using the normal distribution table, we can find the p-value as \(p = 0.0105\).</p>
@@ -128,11 +124,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-3" style="background:;">
+<slide class="quiz small" id="slide-3" style="background:;">
   <hgroup>
     <h2>Question 3</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>Are people moving away from having a traditional land line telephone in their homes?  A random sample of 153 people was asked “Do you have a traditional telephone in your place of residence?”  Of those asked, 95 said they do have a traditional telephone. The 99% confidence interval estimate is</p>
@@ -146,9 +142,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>We have \(\hat{p} = 0.6209\), and margin of error given by \(z^{*} \times \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\), where \(z^{*} = 2.5758\). This gives us \(m = 0.101\). Plugging values, we get \(CI = ( 0.52,0.722 )\).</p>
@@ -159,11 +155,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-4" style="background:;">
+<slide class="quiz small" id="slide-4" style="background:;">
   <hgroup>
     <h2>Question 4</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>Are people moving away from having a traditional land line telephone in their homes?  A random sample of 153 people was asked “Do you have a traditional telephone in your place of residence?”  Of those asked, 95 said they do have a traditional telephone. How large a sample n would you need to estimate p with margin of error 0.03 with 99% confidence?  Use the approximation that p = 0.5 as the value for p in your calculation. </p>
@@ -177,9 +173,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>We know that the margin of error is given by \(m =z^{*}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\). Hence, we get \(n = \left(\frac{z^{*}}{m}\right)^{2}\hat{p}(1-\hat{p})\). Substituting the appropriate values, we get \(n = \left(\frac{2.5758}{0.03}\right)^{2}0.5(1-0.5)\), which on simplification yields \(n = 1844\)</p>
@@ -190,22 +186,22 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-5" style="background:;">
+<slide class="" id="slide-5" style="background:;">
   <hgroup>
     <h2>Question 5</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     <p>A recent book noted that only 22% of investment managers outperform the standard indexes, such as the Dow Jones Industrial Average or the NASDAQ, over a five-year period.A sample of 400 investment managers that had graduated from one of the top ten business programs in the country were followed over a five-year period.  One hundred ten of these outperformed the Dow Jones Industrial Average.  Let p represent the probability that a random investment manager who graduated from one of the top ten business programs will outperform the Dow Jones over a five-year period. </p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-6" style="background:;">
+<slide class="quiz small" id="slide-6" style="background:;">
   <hgroup>
     <h2>Question 5A</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>Based on the results of the sample, a 95% confidence interval for p is</p>
@@ -219,9 +215,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>We have \(\hat{p} = 0.275\), and margin of error given by \(z^{*} \times \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\), where \(z^{*} = 1.96\). This gives us \(m = 0.0438\). Plugging values, we get \(CI = ( 0.231,0.319 )\).</p>
@@ -232,11 +228,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-7" style="background:;">
+<slide class="quiz small" id="slide-7" style="background:;">
   <hgroup>
     <h2>Question 5B</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>Suppose you wished to see if there is evidence that graduates of one of the top business programs perform better than other investment managers. To do this, you test the hypotheses H0: p = 0.22, Ha: p &gt; 0.22. The P-value of your test is</p>
@@ -250,9 +246,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>We can compute the test statistic as \(z=\frac{\hat{p}-p_{0}}{\sqrt{\frac{p_{0}(1-p_{0})}{n}}}\). Plugging in values, we get \(z = 2.6554\). Using the normal distribution table, we can find \(p = 0.004\)</p>
@@ -263,11 +259,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz" id="slide-8" style="background:;">
+<slide class="quiz" id="slide-8" style="background:;">
   <hgroup>
     <h2>Question 5C</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>Suppose you wished to see if there is evidence that graduates of one of the top business programs perform better than other investment managers. To do this, you test the hypotheses H0: p = 0.22, Ha: p &gt; 0.22. The decision made for this hypothesis test would be to</p>
@@ -281,9 +277,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>In 5B, we computed the p-value to be 0.004. Assuming a signficance level of 1%, we would reject the null in favor of the alternate, since the p-value is smaller than the significance level.</p>
@@ -294,11 +290,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-9" style="background:;">
+<slide class="quiz small" id="slide-9" style="background:;">
   <hgroup>
     <h2>Question 6A</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>After the football team once again lost a game to the college’s arch rival, the alumni association conducted a survey to see if alumni were in favor of firing the coach.An SRS of 100 alumni from the population of all living alumni was taken.  Sixty-four of the alumni in the sample were in favor of firing the coach.  Let p represent the proportion of all living alumni who favor firing the coach. A 95% confidence interval for p is</p>
@@ -312,9 +308,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>We have \(\hat{p} = 0.64\), and margin of error given by \(z^{*} \times \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\), where \(z^{*} = 1.96\). This gives us \(m = 0.0941\). Plugging values, we get \(CI = ( 0.546,0.734 )\).</p>
@@ -325,11 +321,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-10" style="background:;">
+<slide class="quiz small" id="slide-10" style="background:;">
   <hgroup>
     <h2>Question 6B</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>After the football team once again lost a game to the college’s arch rival, the alumni association conducted a survey to see if alumni were in favor of firing the coach. An SRS of 100 alumni from the population of all living alumni was taken.  Sixty-four of the alumni in the sample were in favor of firing the coach.  Let p represent the proportion of all living alumni who favor firing the coach. Suppose you wished to see if the majority of alumni are in favor of firing the coach.  To do this you test the hypotheses H0: p = 0.50, Ha: p &gt; 0.50. The P-value of your test is</p>
@@ -343,9 +339,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>We can compute the test statistic as \(z=\frac{\hat{p}-p_{0}}{\sqrt{\frac{p_{0}(1-p_{0})}{n}}}\). Plugging in values, we get \(z = 2.8\). Using the normal distribution table, we can find \(p = 0.0026\)</p>
@@ -356,11 +352,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-11" style="background:;">
+<slide class="quiz small" id="slide-11" style="background:;">
   <hgroup>
     <h2>Question 7</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>An inspector inspects large truckloads of potatoes to determine the proportion p in the shipment with major defects prior to using the potatoes to make potato chips.  Unless there is clear evidence that this proportion is less than 0.10, she will reject the shipment.  To reach a decision, she will test the hypotheses H0: p = 0.10, Ha: p &lt; 0.10 using the large sample test for a population proportion.  To do so, she selects an SRS of 150 potatoes from the over 3000 potatoes on the truck.  Suppose that only six of the potatoes sampled are found to have major defects. Which of the following assumptions for inference about a proportion, using a hypothesis test, are violated? </p>
@@ -374,9 +370,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>All assumptions for the hypothesis test, namely the first three choices are met. So there appear to be no violations.</p>
@@ -387,11 +383,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-12" style="background:;">
+<slide class="quiz small" id="slide-12" style="background:;">
   <hgroup>
     <h2>Question 8A</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>A researcher is studying the failure rate of restaurants.  She selects a random sample of 200 restaurants in large cities that opened within the last year.  Following up on these restaurants, she finds that 80 had failed within five years. A 99% confidence interval for the proportion of restaurants that fail within five years is </p>
@@ -405,9 +401,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>We have \(\hat{p} = 0.4\), and margin of error given by \(z^{*} \times \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\), where \(z^{*} = 2.5758\). This gives us \(m = 0.0892\).</p>
@@ -418,11 +414,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-13" style="background:;">
+<slide class="quiz small" id="slide-13" style="background:;">
   <hgroup>
     <h2>Question 8B</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>A researcher is studying the failure rate of restaurants.  She selects a random sample of 200 restaurants in large cities that opened within the last year.  Following up on these restaurants, she finds that 80 had failed within five years. To determine if opening a restaurant in a large city increases the chance of failure compared to opening a restaurant in a suburban or rural area we should</p>
@@ -436,9 +432,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>In order to answer the question, we need to compare the proportion of restaurants that fail in large cities to that of restaurants failing in suburban or rural areas. None of the hypotheses listed in the answers do such a comparison.</p>
@@ -449,11 +445,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-14" style="background:;">
+<slide class="quiz small" id="slide-14" style="background:;">
   <hgroup>
     <h2>Question 9A</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>An SRS of size 100 is taken from a population having proportion 0.8 of successes.  An independent SRS of size 400 is taken from a population having proportion 0.5 of successes. The sampling distribution for the difference in the sample proportions has mean </p>
@@ -467,9 +463,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The mean of the sampling distribution for difference in the sample proportions is given by 0.8 - 0.5 which equals 0.3.</p>
@@ -480,11 +476,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-15" style="background:;">
+<slide class="quiz small" id="slide-15" style="background:;">
   <hgroup>
     <h2>Question 9B</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>An SRS of size 100 is taken from a population having proportion 0.8 of successes.  An independent SRS of size 400 is taken from a population having proportion 0.5 of successes. The sampling distribution for the difference in the sample proportions, has standard deviation σD equal to</p>
@@ -498,9 +494,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The standard error of the sampling distribution can be computed as \(\sqrt{\frac{\hat{p}_{1}(1-\hat{p}_{1})}{n_{1}}+\frac{\hat{p}_{2}(1-\hat{p}_{2})}{n_{2}}}\). Plugging the correct values, we get \(se = 0.0472\)</p>
@@ -511,11 +507,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-16" style="background:;">
+<slide class="quiz small" id="slide-16" style="background:;">
   <hgroup>
     <h2>Question 10A</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>In a large midwestern university (the class of entering freshmen being on the order of 6000 or more students), an SRS of 100 entering freshmen in 1993 found that 20 finished in the bottom third of their high school class.  Admission standards at the university were tightened in 1995.  In 1997 an SRS of 100 entering freshmen found that 10 finished in the bottom third of their high school class.  Let p1 and p2 be the proportion of all entering freshmen in 1993 and 1997, respectively, who graduated in the bottom third of their high school class. A 90% confidence interval for p1 – p2 is</p>
@@ -529,9 +525,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The standard error of the sampling distribution can be computed as \(\sqrt{\frac{\hat{p}_{1}(1-\hat{p}_{1})}{n_{1}}+\frac{\hat{p}_{2}(1-\hat{p}_{2})}{n_{2}}}\). Plugging the correct values, we get \(se = 0.05\). Hence the margin of error for a 90% confidence interval equals \(m = z^{*} \times se\), which gives us \(m = 1.6449 \times 0.05\), which equals 0.0822.</p>
@@ -542,11 +538,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-17" style="background:;">
+<slide class="quiz small" id="slide-17" style="background:;">
   <hgroup>
     <h2>Question 10B</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>In a large midwestern university (the class of entering freshmen being on the order of 6000 or more students), an SRS of 100 entering freshmen in 1993 found that 20 finished in the bottom third of their high school class.  Admission standards at the university were tightened in 1995.  In 1997 an SRS of 100 entering freshmen found that 10 finished in the bottom third of their high school class.  Let p1 and p2 be the proportion of all entering freshmen in 1993 and 1997, respectively, who graduated in the bottom third of their high school class. Is there evidence that the proportion of freshmen who graduated in the bottom third of their high school class in 1997 has been reduced, as a result of the tougher admission standards adopted in 1995, compared to the proportion in 1993?  To determine this, you test the hypotheses H0: p1 = p2, Ha: p1 &gt; p2. The P-value of your test is</p>
@@ -560,9 +556,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>We do a pooled test here and hence the standard error is given by  \(\sqrt{\frac{\hat{p}(1-\hat{p})}{n_{1}}+\frac{\hat{p}(1-\hat{p})}{n_{2}}}\), where \(\hat{p} = (20 + 10)/(100 + 100)\). Plugging the correct values, we get \(se = 0.0505\) and hence \(z = 1.9803\). Using the normal distribution table, we can find \(p = 0.0238\) .</p>
@@ -573,11 +569,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-18" style="background:;">
+<slide class="quiz small" id="slide-18" style="background:;">
   <hgroup>
     <h2>Question 11A</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>An SRS of 100 flights of a large airline (call this airline 1) showed that 64 were on time.  An SRS of 100 flights of another large airline (call this airline 2) showed that 80 were on time.  Let p1 and p2 be the proportion of all flights that are on time for these two airlines. A 90% confidence interval for the difference p1 – p2 is: </p>
@@ -591,20 +587,20 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
 </div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-19" style="background:;">
+<slide class="quiz small" id="slide-19" style="background:;">
   <hgroup>
     <h2>Question 11B</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>An SRS of 100 flights of a large airline (call this airline 1) showed that 64 were on time.  An SRS of 100 flights of another large airline (call this airline 2) showed that 80 were on time.  Let p1 and p2 be the proportion of all flights that are on time for these two airlines. Is there evidence of a difference in the on-time rate for the two airlines?  To determine this, you test the hypotheses H0: p1 = p2, Ha: p1 ≠ p2. The P-value of your test of the hypotheses given is: </p>
@@ -618,20 +614,20 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
 </div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-20" style="background:;">
+<slide class="" id="slide-20" style="background:;">
   <hgroup>
     <h2>Question 12</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     <p>Are avid readers more likely to wear glasses than those who read less frequently?  Three hundred men in the Korean Army were selected at random and characterized as to whether they wore glasses and whether the amount of reading they did was above average, average, or below average.  The results are presented in the following table.</p>
 
 <table><thead>
@@ -662,11 +658,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-21" style="background:;">
+<slide class="quiz small" id="slide-21" style="background:;">
   <hgroup>
     <h2>Question 12A</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>This is an r × c table.  The number r has value: </p>
@@ -680,9 +676,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>There are 3 rows, one for each amount of reading.</p>
@@ -693,11 +689,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-22" style="background:;">
+<slide class="quiz small" id="slide-22" style="background:;">
   <hgroup>
     <h2>Question 12B</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>The proportion of men in the table who wore glasses is: </p>
@@ -711,9 +707,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The number of men wearing glasses is 47 + 48 + 31. Hence, the proportion of men wearing glasses is given by 0.42</p>
@@ -724,11 +720,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz" id="slide-23" style="background:;">
+<slide class="quiz" id="slide-23" style="background:;">
   <hgroup>
     <h2>Question 12C</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>The proportion of all above-average readers who wear glasses is: </p>
@@ -742,9 +738,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The number of above-average readers is given by 73 of which 47 wore glasses. Hence the proportion of above-average readers wearing glasses is given by 0.6438</p>
@@ -755,11 +751,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-24" style="background:;">
+<slide class="quiz small" id="slide-24" style="background:;">
   <hgroup>
     <h2>Question 12D</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>Suppose we wish to test the null hypothesis that there is no association between the amount of reading you do and whether you wear glasses.  Under the null hypothesis, the expected number of above average readers who wear glasses is:</p>
@@ -773,9 +769,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The total number of above average readers is 73 and the total number wearing glasses is 126. Hence the expected count is given by \((73 \times 126)/300\), which gives us 30.66 </p>
@@ -786,11 +782,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz" id="slide-25" style="background:;">
+<slide class="quiz" id="slide-25" style="background:;">
   <hgroup>
     <h2>Question 12E</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>Suppose we wish to display in a graphic the proportion of all above average readers that wear glasses and do not wear glasses, respectively.  Which of the following graphical displays is best suited to this purpose? </p>
@@ -804,9 +800,9 @@
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>A bar graph is the best to use while displaying information about a categorical variable. </p>
@@ -817,11 +813,11 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="small" id="slide-26" style="background:;">
+<slide class="small" id="slide-26" style="background:;">
   <hgroup>
     <h2>Question 13</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     <p>Are the inflation rates of the United States and the United Kingdom associated? If so, can we  attempt to predict the U.S. Inflation Rate using the UK Inflation Rate?  Suppose we fit the   following simple linear regression model: U.S. Inflation Ratei = β0 + β1(UK Inflation Rate)i + εi, where the deviations εi were assumed to be independent and normally distributed, with mean 0 and standard deviation σ.  This model was fit to the data using the method of least squares.  A random sample of 20 annual rates was selected from the past 110 years’ rates. The following results were obtained from statistical software.</p>
 
 <pre><code>R2 = 0.533
@@ -836,11 +832,11 @@ UK Inflation Rate   0.6652         0.1468
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz" id="slide-27" style="background:;">
+<slide class="quiz" id="slide-27" style="background:;">
   <hgroup>
     <h2>Question 13A</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>The intercept of the least-squares regression line is (approximately): </p>
@@ -854,9 +850,9 @@ UK Inflation Rate   0.6652         0.1468
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The intercept is the parameter estimate for the constant in the regression output.</p>
@@ -867,11 +863,11 @@ UK Inflation Rate   0.6652         0.1468
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz" id="slide-28" style="background:;">
+<slide class="quiz" id="slide-28" style="background:;">
   <hgroup>
     <h2>Question 13B</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>A 90% confidence interval for the slope β1 in the simple linear regression model is (approximately): </p>
@@ -885,9 +881,9 @@ UK Inflation Rate   0.6652         0.1468
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>A 90% confidence interval can be calculated as \(0.6652 \pm t^{*} \times 0.1468\). The degrees of freedom for \(t^{*}\) is given by \(N - C\) which equals 20 - 2 = 18. Hence, \(t^{*} = 1.7341\). Plugging in, we get ( 0.4106, 0.9198 )</p>
@@ -898,11 +894,11 @@ UK Inflation Rate   0.6652         0.1468
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz" id="slide-29" style="background:;">
+<slide class="quiz" id="slide-29" style="background:;">
   <hgroup>
     <h2>Question 13C</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>Is there strong evidence (and if so, why) that the relationship between the UK inflation rate and the U.S. inflation rate is adequately described by a straight line? </p>
@@ -916,20 +912,20 @@ UK Inflation Rate   0.6652         0.1468
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
 </div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz" id="slide-30" style="background:;">
+<slide class="quiz" id="slide-30" style="background:;">
   <hgroup>
     <h2>Question 13D</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>Suppose the researchers test the hypotheses: H0: β1 = 0, Ha: β1 ≠ 0. The value of the t statistic for this test is: </p>
@@ -943,9 +939,9 @@ UK Inflation Rate   0.6652         0.1468
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The t statistic is given by \(t = 0.6652/0.1468\), which gives us 4.53</p>
@@ -956,11 +952,11 @@ UK Inflation Rate   0.6652         0.1468
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz" id="slide-31" style="background:;">
+<slide class="quiz" id="slide-31" style="background:;">
   <hgroup>
     <h2>Question 13E</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>The correlation between these two variables is: </p>
@@ -974,9 +970,9 @@ UK Inflation Rate   0.6652         0.1468
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>For a simple linear regression, the correlation is the square root of the coefficient of determination \(R^2\), which gives us 0.7301</p>
@@ -987,11 +983,11 @@ UK Inflation Rate   0.6652         0.1468
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-32" style="background:;">
+<slide class="" id="slide-32" style="background:;">
   <hgroup>
     <h2>Question 14</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     <p>A random sample of 79 companies from the Forbes 500 list (which actually consists of nearly 800 companies) was selected, and the relationship between sales (in hundreds of thousands of dollars) and profits (in hundreds of thousands of dollars) was investigated by regression.  The following simple linear regression model was used</p>
 
 <p>Profitsi = β0 + β1(Sales)i + εi</p>
@@ -1010,11 +1006,11 @@ Sales               0.092498         0.0075
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-33" style="background:;">
+<slide class="quiz small" id="slide-33" style="background:;">
   <hgroup>
     <h2>Question 14A</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>The intercept of the least-squares regression line is (approximately): </p>
@@ -1028,9 +1024,9 @@ Sales               0.092498         0.0075
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The constant in the regression output corresponds to the intercept.</p>
@@ -1041,11 +1037,11 @@ Sales               0.092498         0.0075
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz small" id="slide-34" style="background:;">
+<slide class="quiz small" id="slide-34" style="background:;">
   <hgroup>
     <h2>Question 14B</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>A 90% confidence interval for the slope β1 in the simple linear regression model is (approximately): </p>
@@ -1059,9 +1055,9 @@ Sales               0.092498         0.0075
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The margin of error for a 90% confidence interval can be calculated as \(t^{*} \times 0.0075\). The degrees of freedom for \(t^{*}\) is given by \(N - C\) which equals 79 - 2 = 77. Hence, \(t^{*} = 1.6649\). Plugging in, we get 0.0125. The center of the confidence interval is the slope of the regression line, which equals \(0.09\).</p>
@@ -1072,11 +1068,11 @@ Sales               0.092498         0.0075
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz" id="slide-35" style="background:;">
+<slide class="quiz" id="slide-35" style="background:;">
   <hgroup>
     <h2>Question 14C</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>Suppose the researchers test the hypotheses: H0: β1 = 0, Ha: β1 &gt; 0. P-value of the test is: </p>
@@ -1090,9 +1086,9 @@ Sales               0.092498         0.0075
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
   <div class="quiz-explanation">
     <p>The t-statistic is given by $t = 12.3333. Using the t-table we can find that the p-value will be smaller than 0.01.</p>
@@ -1103,11 +1099,11 @@ Sales               0.092498         0.0075
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="quiz" id="slide-36" style="background:;">
+<slide class="quiz" id="slide-36" style="background:;">
   <hgroup>
     <h2>Question 14D</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     
 <div class="quiz-single well new">
   <p>Is there strong evidence (and if so, why) of a straight line relationship between sales and profits? </p>
@@ -1121,14 +1117,15 @@ Sales               0.092498         0.0075
 
   
   <button class="quiz-submit btn btn-primary">Submit</button>
-  
+  <button class="quiz-toggle-hint btn">Show Hint</button>
   <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear">Clear</button>
+  <button class="quiz-clear btn">Clear</button>
   
 </div>
   </article>
   <!-- Presenter Notes -->
 </slide>
+
 
     <slide class="backdrop"></slide>
   </slides>
@@ -1158,6 +1155,7 @@ Sales               0.092498         0.0075
 </script> -->
 <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
 </script>
+<script src='libraries/widgets/quiz/js/jquery-1.7.min.js'></script>
 <script src='libraries/widgets/quiz/js/jquery.quiz.js'></script>
 <script src='libraries/widgets/quiz/js/mustache.min.js'></script>
 <script type="text/javascript">
